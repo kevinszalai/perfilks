@@ -140,9 +140,9 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .ecard.hero-ev .slide-caption{color:rgba(255,255,255,.4)}
 
 /* CAROUSEL */
-.carousel-card{position:relative;overflow:visible}
-.carousel-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);overflow:hidden;border-radius:3px}
-.carousel-slide{min-width:100%}
+.carousel-card{position:relative;overflow:hidden}.carousel-wrapper{overflow:hidden;width:100%;border-radius:3px}
+.carousel-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);border-radius:3px;width:100%}
+.carousel-slide{min-width:100%;flex-shrink:0;width:100%}
 .carousel-dots{display:flex;justify-content:center;gap:5px;padding:8px 0 12px}
 .cdot{width:5px;height:5px;border-radius:50%;background:rgba(0,82,143,.2);cursor:pointer;transition:all .25s;border:none;padding:0}
 .ecard.hero-ev .cdot{background:rgba(255,255,255,.25)}
@@ -389,7 +389,7 @@ h1{animation:fadeUp .6s .2s both}
 
   <div class="ev-main reveal reveal-delay-2">
     <div class="ecard hero-ev carousel-card touch-action-pan-y">
-      <div class="carousel-track" id="c0-track">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c0-track">
         <div class="carousel-slide"><img src="agenda-1.jpg" alt="Jornada RCP" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Jornada de RCP con partners estratégicos</div></div>
         <div class="carousel-slide"><img src="agenda-2.jpg" alt="Congreso Regional de Seguros" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Congreso Regional de Seguros — Sponsor top</div></div>
         <div class="carousel-slide"><img src="agenda-3.jpg" alt="Espacio VIP FAEVYT" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Espacio VIP — Congreso FAEVYT, Paraná</div></div>
@@ -398,7 +398,7 @@ h1{animation:fadeUp .6s .2s both}
         <div class="carousel-slide"><img src="agenda-6.jpg" alt="Workshop regional" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Workshop con red de agentes de viajes</div></div>
         <div class="carousel-slide"><img src="agenda-7.jpg" alt="Stand feria" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Stand en feria de agencias de viajes</div></div>
         <div class="carousel-slide"><img src="agenda-8.jpg" alt="Stand ACAV" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Stand ACAV — Córdoba</div></div>
-      </div>
+      </div></div>
       <div class="carousel-dots" id="c0-dots">
         <button class="cdot active" onclick="goTo('c0',0)"></button>
         <button class="cdot" onclick="goTo('c0',1)"></button>
@@ -422,12 +422,12 @@ h1{animation:fadeUp .6s .2s both}
     </div>
     <div class="ev-side">
       <div class="ecard carousel-card touch-action-pan-y" style="flex:1">
-        <div class="carousel-track" id="c1-track">
+        <div class="carousel-wrapper"><div class="carousel-track" id="c1-track">
           <div class="carousel-slide"><img class="ev-img" src="fit-1.jpg" alt="FIT 2025" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
           <div class="carousel-slide"><img class="ev-img" src="fit-2.jpg" alt="FIT 2025 Stand" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
           <div class="carousel-slide"><img class="ev-img" src="fit-3.jpg" alt="FIT 2025 Equipo" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        </div>
-        <div class="carousel-dots" id="c1-dots">
+        </div></div>
+      <div class="carousel-dots" id="c1-dots">
           <button class="cdot active" onclick="goTo('c1',0)"></button>
           <button class="cdot" onclick="goTo('c1',1)"></button>
           <button class="cdot" onclick="goTo('c1',2)"></button>
@@ -439,12 +439,12 @@ h1{animation:fadeUp .6s .2s both}
         <div class="ev-desc">Stand renovado en la feria de turismo más importante de la región. Edición especial por los 45 años de Universal Assistance.</div>
       </div>
       <div class="ecard carousel-card touch-action-pan-y" style="flex:1">
-        <div class="carousel-track" id="c2-track">
+        <div class="carousel-wrapper"><div class="carousel-track" id="c2-track">
           <div class="carousel-slide"><img class="ev-img" src="chile-rugby-1.jpg" alt="Chile Rugby — Universal Assistance" style="height:220px;border-radius:3px;margin-bottom:0"></div>
           <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Chile Rugby — 2</span></div></div>
           <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Chile Rugby — 3</span></div></div>
-        </div>
-        <div class="carousel-dots" id="c2-dots">
+        </div></div>
+      <div class="carousel-dots" id="c2-dots">
           <button class="cdot active" onclick="goTo('c2',0)"></button>
           <button class="cdot" onclick="goTo('c2',1)"></button>
           <button class="cdot" onclick="goTo('c2',2)"></button>
@@ -460,11 +460,11 @@ h1{animation:fadeUp .6s .2s both}
 
   <div class="ev-row reveal reveal-delay-3">
     <div class="ecard carousel-card touch-action-pan-y">
-      <div class="carousel-track" id="c3-track">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c3-track">
         <div class="carousel-slide"><img src="campana-1.jpg" alt="Campaña Te cuesta $0" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Campaña — 2</span></div></div>
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Campaña — 3</span></div></div>
-      </div>
+      </div></div>
       <div class="carousel-dots" id="c3-dots">
         <button class="cdot active" onclick="goTo('c3',0)"></button>
         <button class="cdot" onclick="goTo('c3',1)"></button>
@@ -477,11 +477,11 @@ h1{animation:fadeUp .6s .2s both}
       <div class="ev-desc">Campaña regional con activación interna. Mensaje directo, impacto en toda la región.</div>
     </div>
     <div class="ecard carousel-card touch-action-pan-y">
-      <div class="carousel-track" id="c4-track">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c4-track">
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 1</span></div></div>
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 2</span></div></div>
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 3</span></div></div>
-      </div>
+      </div></div>
       <div class="carousel-dots" id="c4-dots">
         <button class="cdot active" onclick="goTo('c4',0)"></button>
         <button class="cdot" onclick="goTo('c4',1)"></button>
@@ -494,11 +494,11 @@ h1{animation:fadeUp .6s .2s both}
       <div class="ev-desc">Esta sección está preparada para crecer con cada nuevo evento.</div>
     </div>
     <div class="ecard carousel-card touch-action-pan-y">
-      <div class="carousel-track" id="c5-track">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c5-track">
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 1</span></div></div>
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 2</span></div></div>
         <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 3</span></div></div>
-      </div>
+      </div></div>
       <div class="carousel-dots" id="c5-dots">
         <button class="cdot active" onclick="goTo('c5',0)"></button>
         <button class="cdot" onclick="goTo('c5',1)"></button>
