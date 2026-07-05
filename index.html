@@ -608,22 +608,23 @@ statNums.forEach(el=>numObs.observe(el));
 // CAROUSEL
 const carousels={};
 function initCarousel(id){
-  const total=document.querySelectorAll('#'+id+'-track .carousel-slide').length;
+  const slides=document.querySelectorAll('#'+id+'-track .carousel-slide');
+  const total=slides.length;
   carousels[id]={current:0,total};
   const track=document.getElementById(id+'-track');
   if(!track)return;
-  // Ocultar controles si hay 1 sola foto
-  if(total<=1){
-    const dots=document.getElementById(id+'-dots');
-    if(dots)dots.style.display='none';
-    const card=track.closest('.carousel-card');
-    if(card){card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display='none');}
-  }
+  const card=track.closest('.carousel-card');
+  // Contar slides con imagen real (no placeholder)
+  const realSlides=Array.from(slides).filter(s=>s.querySelector('img')).length;
+  const showControls = realSlides > 1;
+  const dots=document.getElementById(id+'-dots');
+  if(dots)dots.style.display=showControls?'flex':'none';
+  if(card){card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display=showControls?'flex':'none');}
   let startX=0;
   track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
   track.addEventListener('touchend',e=>{const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40&&total>1)move(id,diff>0?1:-1);},{passive:true});
 }
-['c0','c1','c2','c3','c4','c5'].forEach(initCarousel);
+document.addEventListener('DOMContentLoaded',()=>['c0','c1','c2','c3','c4','c5'].forEach(initCarousel));
 setInterval(()=>move('c0',1),3500);
 function goTo(id,idx){const c=carousels[id];c.current=idx;document.getElementById(id+'-track').style.transform='translateX(-'+idx*100+'%)';document.querySelectorAll('#'+id+'-dots .cdot').forEach((d,i)=>d.classList.toggle('active',i===idx));}
 function move(id,dir){const c=carousels[id];goTo(id,(c.current+dir+c.total)%c.total);}
