@@ -612,9 +612,16 @@ function initCarousel(id){
   carousels[id]={current:0,total};
   const track=document.getElementById(id+'-track');
   if(!track)return;
+  // Ocultar controles si hay 1 sola foto
+  if(total<=1){
+    const dots=document.getElementById(id+'-dots');
+    if(dots)dots.style.display='none';
+    const card=track.closest('.carousel-card');
+    if(card){card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display='none');}
+  }
   let startX=0;
   track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
-  track.addEventListener('touchend',e=>{const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40)move(id,diff>0?1:-1);},{passive:true});
+  track.addEventListener('touchend',e=>{const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40&&total>1)move(id,diff>0?1:-1);},{passive:true});
 }
 ['c0','c1','c2','c3','c4','c5'].forEach(initCarousel);
 setInterval(()=>move('c0',1),3500);
