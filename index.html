@@ -16,88 +16,69 @@
 html{scroll-behavior:smooth}
 html,body{overflow-x:hidden;width:100%;background:#f5f4f0}
 :root{
-  --bg:#f5f4f0;
-  --bg2:#edecea;
-  --white:#ffffff;
-  --black:#111111;
-  --blue:#00528F;
-  --blue2:#003d6b;
-  --blue-light:#e8f0f8;
-  --teal:#008091;
-  --cyan:#00C4DF;
-  --text:#1a1a1a;
-  --muted:#6b6b6b;
-  --muted2:#9a9a9a;
-  --border:#dddbd7;
-  --border2:#c8c5c0;
+  --bg:#f5f4f0;--bg2:#edecea;--white:#ffffff;--black:#111111;
+  --blue:#00528F;--blue2:#003d6b;--blue-light:#e8f0f8;--teal:#008091;--cyan:#00C4DF;
+  --text:#1a1a1a;--muted:#6b6b6b;--muted2:#9a9a9a;--border:#dddbd7;--border2:#c8c5c0;
 }
 body{color:var(--text);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6}
 
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,244,240,0.92);border-bottom:1px solid var(--border);backdrop-filter:blur(16px)}
 .nav-inner{max-width:1280px;margin:0 auto;padding:1rem 3rem;display:flex;justify-content:space-between;align-items:center}
-.nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:1rem;color:var(--blue);text-decoration:none;letter-spacing:-.01em}
+.nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:var(--blue);text-decoration:none}
 .nav-links{display:flex;gap:2.2rem;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
 .nav-links a:hover{color:var(--blue)}
 
-/* PAGE WRAP */
 .page-wrap{max-width:1280px;margin:0 auto;width:100%}
 
-/* HERO */
 .hero{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;padding:7rem 3rem 4rem;gap:5rem;background:var(--bg);position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;right:-5%;top:-20%;width:55%;height:140%;background:var(--blue);clip-path:polygon(15% 0,100% 0,100% 100%,0% 100%);opacity:.04;pointer-events:none}
 .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue-light);border:1px solid rgba(0,82,143,.15);border-radius:100px;padding:.35rem .9rem;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:1.6rem}
 .hero-badge span{width:6px;height:6px;border-radius:50%;background:var(--blue);display:inline-block;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
-h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.8rem,5vw,5rem);font-weight:700;line-height:1.05;letter-spacing:-.01em;color:var(--black)}
+h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.8rem,5vw,5rem);font-weight:700;line-height:1.05;color:var(--black)}
 h1 .accent{color:var(--blue)}
 h1 .stroke{-webkit-text-stroke:2px var(--black);color:transparent}
 .hero-sub{margin-top:1.5rem;font-size:1rem;line-height:1.8;color:var(--muted);max-width:440px}
 .hero-cta{margin-top:2.2rem;display:flex;gap:1rem;flex-wrap:wrap}
 .btn{padding:.8rem 1.8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:all .25s;font-family:'Inter',sans-serif;font-weight:500;display:inline-flex;align-items:center;gap:.5rem}
 .btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 20px rgba(0,82,143,.25)}
-.btn-primary:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,82,143,.3)}
-.btn-secondary{border:1.5px solid var(--border2);color:var(--text);background:transparent}
+.btn-primary:hover{background:var(--blue2);transform:translateY(-2px)}
+.btn-secondary{border:1.5px solid var(--border2);color:var(--text)}
 .btn-secondary:hover{border-color:var(--blue);color:var(--blue)}
 
-/* STATS */
 .hero-right{display:flex;flex-direction:column;gap:1px;background:var(--border)}
 .stat-card{background:var(--white);padding:1.8rem 2rem;transition:background .25s}
 .stat-card:hover{background:var(--blue-light)}
 .stat-card.featured{background:var(--blue);color:#fff}
-.stat-num{font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:800;line-height:1;color:var(--blue)}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:700;line-height:1;color:var(--blue)}
 .stat-card.featured .stat-num{color:#fff}
 .stat-label{margin-top:.3rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
 .stat-card.featured .stat-label{color:rgba(255,255,255,.6)}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1}
 
-/* TRAY */
 .tray{background:var(--white);border-top:1px solid var(--border);padding:.65rem 3rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;max-width:1280px;margin:0 auto;width:100%}
 .tray-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted2);white-space:nowrap}
 .tray-item{font-size:.82rem;color:var(--muted);font-weight:500}
 .tray-dot{color:var(--border2)}
 
-/* SECTIONS */
 section{padding:5rem 3rem;position:relative}
 .sec-eyebrow{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);margin-bottom:.9rem;display:flex;align-items:center;gap:.7rem}
 .sec-eyebrow::before{content:'';display:block;width:24px;height:1.5px;background:var(--blue)}
-h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;letter-spacing:-.01em;color:var(--black);margin-bottom:1rem;line-height:1.05}
+h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:var(--black);margin-bottom:1rem;line-height:1.05}
 
-/* ABOUT */
 #about{background:var(--white)}
 .about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:5rem;align-items:start;margin-top:3rem}
 .about-text p{font-size:.97rem;line-height:1.85;color:var(--muted);margin-bottom:1.2rem}
 .about-text p strong{color:var(--text);font-weight:600}
 .skill-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
-.skill-tag{background:var(--blue-light);border:1px solid rgba(0,82,143,.12);padding:.35rem .85rem;font-size:.72rem;letter-spacing:.05em;border-radius:3px;color:var(--blue);font-weight:500}
+.skill-tag{background:var(--blue-light);border:1px solid rgba(0,82,143,.12);padding:.35rem .85rem;font-size:.72rem;border-radius:3px;color:var(--blue);font-weight:500}
 .info-card{background:var(--bg);border:1px solid var(--border);border-radius:4px;overflow:hidden}
 .info-item{padding:.9rem 1.4rem;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:.2rem}
 .info-item:last-child{border-bottom:none}
 .info-label{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);opacity:.7}
 .info-val{font-size:.88rem;color:var(--text);line-height:1.5}
 
-/* EXPERIENCE */
 #experience{background:var(--bg2)}
 .timeline{position:relative;padding-left:1.5rem;margin-top:3rem}
 .timeline::before{content:'';position:absolute;left:0;top:.5rem;bottom:0;width:2px;background:linear-gradient(to bottom,var(--blue) 0%,rgba(0,82,143,.1) 100%)}
@@ -110,21 +91,17 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .t-bullets li{font-size:.88rem;line-height:1.7;color:var(--muted);padding-left:1rem;position:relative}
 .t-bullets li::before{content:'›';position:absolute;left:0;color:var(--blue);font-weight:700}
 
-/* EVENTS */
-#events{background:var(--white)}
+#events{background:var(--white);padding-bottom:2rem}
 .events-lead{font-size:.97rem;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:3rem}
-.ev-main{display:grid;grid-template-columns:1.1fr 1fr;gap:2px;background:var(--border);border-radius:4px;overflow:hidden;margin-bottom:2px}
-.ev-side{display:flex;flex-direction:column;gap:2px;background:var(--border)}
-.ev-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:4px;overflow:hidden}
+
+/* LAYOUT EVENTOS: principal arriba, 3 abajo */
+.ev-principal{border-radius:4px;overflow:hidden;margin-bottom:2px}
+.ev-fila3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:4px;overflow:hidden}
+
 .ecard{background:var(--white);padding:2rem;position:relative;overflow:hidden;transition:background .25s}
 .ecard:hover{background:var(--blue-light)}
 .ecard.hero-ev{background:var(--blue);color:#fff}
 .ecard.hero-ev:hover{background:var(--blue2)}
-.ev-img{width:100%;height:220px;object-fit:cover;border-radius:3px;margin-bottom:1.2rem;display:block}
-.ev-img-ph{width:100%;height:220px;border-radius:3px;margin-bottom:1.2rem;background:rgba(0,82,143,.08);border:1.5px dashed rgba(0,82,143,.2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem}
-.ev-img-ph span{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,82,143,.4)}
-.ecard.hero-ev .ev-img-ph{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)}
-.ecard.hero-ev .ev-img-ph span{color:rgba(255,255,255,.4)}
 .ev-tag{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.6rem;font-weight:500}
 .ecard.hero-ev .ev-tag{color:rgba(255,255,255,.6)}
 .ev-title{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;line-height:1.25;margin-bottom:.6rem;color:var(--black)}
@@ -136,27 +113,29 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .ev-hl::before{content:'✓';position:absolute;left:0;color:var(--teal);font-size:.72rem}
 .ecard.hero-ev .ev-hl{color:rgba(255,255,255,.65)}
 .ecard.hero-ev .ev-hl::before{color:var(--cyan)}
+.ev-img-ph{width:100%;border-radius:3px;margin-bottom:0;background:rgba(0,82,143,.08);border:1.5px dashed rgba(0,82,143,.2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem}
+.ev-img-ph span{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,82,143,.4)}
+.ecard.hero-ev .ev-img-ph{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)}
+.ecard.hero-ev .ev-img-ph span{color:rgba(255,255,255,.4)}
 .slide-caption{font-size:.7rem;color:var(--muted2);letter-spacing:.06em;padding:.4rem 0 .2rem;text-align:center;min-height:1.3rem}
 .ecard.hero-ev .slide-caption{color:rgba(255,255,255,.4)}
 
-/* CAROUSEL */
-.carousel-card{position:relative;overflow:hidden}.carousel-wrapper{overflow:hidden;width:100%;border-radius:3px}
-.carousel-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);border-radius:3px;width:100%}
+.carousel-card{position:relative;overflow:hidden}
+.carousel-wrapper{overflow:hidden;width:100%;border-radius:3px}
+.carousel-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);width:100%}
 .carousel-slide{min-width:100%;flex-shrink:0;width:100%}
 .carousel-dots{display:flex;justify-content:center;gap:5px;padding:8px 0 12px}
 .cdot{width:5px;height:5px;border-radius:50%;background:rgba(0,82,143,.2);cursor:pointer;transition:all .25s;border:none;padding:0}
 .ecard.hero-ev .cdot{background:rgba(255,255,255,.25)}
 .cdot.active{background:var(--blue);transform:scale(1.4)}
 .ecard.hero-ev .cdot.active{background:#fff}
-.carousel-btn{position:absolute;top:calc(220px/2);transform:translateY(-50%);background:var(--white);border:1px solid var(--border);color:var(--text);width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;z-index:10;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.carousel-btn{position:absolute;top:110px;transform:translateY(-50%);background:var(--white);border:1px solid var(--border);color:var(--text);width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;z-index:10;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,.1)}
 .carousel-btn:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
 .carousel-btn.prev{left:6px}
 .carousel-btn.next{right:6px}
 .ecard.hero-ev .carousel-btn{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff}
 .ecard.hero-ev .carousel-btn:hover{background:rgba(255,255,255,.3)}
-.touch-action-pan-y{touch-action:pan-y}
 
-/* PROJECTS */
 #projects{background:var(--bg2)}
 .proj-intro{font-size:.97rem;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:3rem}
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:4px;overflow:hidden}
@@ -165,17 +144,16 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .proj-card:hover{background:var(--blue-light)}
 .proj-card:hover::after{transform:scaleX(1)}
 .proj-tag{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem;font-weight:500}
-.proj-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:800;color:rgba(0,82,143,.1);line-height:1;margin-bottom:.4rem}
+.proj-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;color:rgba(0,82,143,.1);line-height:1;margin-bottom:.4rem}
 .proj-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:.6rem;line-height:1.2;color:var(--black)}
 .proj-desc{font-size:.83rem;line-height:1.7;color:var(--muted);margin-bottom:1.3rem}
 .proj-link{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:.4rem;font-weight:500}
 .proj-link::after{content:'↗';transition:transform .2s}
 .proj-card:hover .proj-link::after{transform:translate(2px,-2px)}
 
-/* CONTACT */
 #contact{background:var(--white)}
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start;margin-top:3rem}
-.contact-hl{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;line-height:1.05;margin-bottom:1rem;letter-spacing:-.01em;color:var(--black)}
+.contact-hl{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;line-height:1.05;margin-bottom:1rem;color:var(--black)}
 .contact-hl .accent{color:var(--blue)}
 .contact-sub{font-size:.95rem;line-height:1.8;color:var(--muted);margin-bottom:1.5rem}
 .contact-form{display:flex;flex-direction:column;gap:.6rem}
@@ -186,17 +164,15 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .form-field input:focus,.form-field textarea:focus{border-color:var(--blue);background:var(--white)}
 .form-field input::placeholder,.form-field textarea::placeholder{color:var(--muted2)}
 .form-submit{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:.85rem 2rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;cursor:pointer;transition:all .25s;align-self:flex-start;display:flex;align-items:center;gap:.5rem}
-.form-submit:hover{background:var(--blue2);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,82,143,.25)}
+.form-submit:hover{background:var(--blue2);transform:translateY(-2px)}
 .form-success{display:none;background:#e8f5ee;border:1px solid #b3dfc4;border-radius:4px;padding:.9rem 1.2rem;font-size:.85rem;color:#1a6b3a;margin-top:.8rem}
-.li-btn{display:inline-flex;align-items:center;gap:.6rem;border:1.5px solid var(--border2);color:var(--text);border-radius:4px;padding:.7rem 1.4rem;font-size:.78rem;text-decoration:none;font-weight:500;transition:all .25s;font-family:'Inter',sans-serif;letter-spacing:.04em}
+.li-btn{display:inline-flex;align-items:center;gap:.6rem;border:1.5px solid var(--border2);color:var(--text);border-radius:4px;padding:.7rem 1.4rem;font-size:.78rem;text-decoration:none;font-weight:500;transition:all .25s}
 .li-btn:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-light)}
 
-/* FOOTER */
 footer{background:var(--bg2);border-top:1px solid var(--border);padding:1.8rem 3rem;display:flex;justify-content:space-between;align-items:center}
 .footer-copy{font-size:.73rem;color:var(--muted2)}
 .footer-name{font-family:'Space Grotesk',sans-serif;font-size:.85rem;color:var(--blue);font-weight:700}
 
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-delay-1{transition-delay:.1s}
@@ -210,41 +186,54 @@ h1{animation:fadeUp .6s .2s both}
 .hero-right{animation:fadeUp .6s .5s both}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 
-/* RESPONSIVE */
 @media(max-width:900px){
   .nav-inner{padding:1rem 1.5rem}.nav-links{gap:1.4rem}
   .hero{grid-template-columns:1fr;padding:5.5rem 1.5rem 3rem;gap:2.5rem}
-  .hero-right{flex-direction:row}
-  .stat-grid{grid-template-columns:1fr 1fr}
   section{padding:4rem 1.5rem}
-  .about-grid,.ev-main,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
-  .ev-side{flex-direction:column}
-  .proj-grid,.ev-row{grid-template-columns:1fr}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .proj-grid,.ev-fila3{grid-template-columns:1fr}
   .tray{padding:.65rem 1.5rem}
   footer{padding:1.5rem;flex-direction:column;gap:.8rem;text-align:center}
 }
 @media(max-width:600px){
   .nav-links{display:none}
   h1{font-size:2.3rem}
-  h2{font-size:1.6rem}
-  .hero{padding:4.5rem 1.2rem 2.5rem;gap:2rem}
-  .hero-right{flex-direction:column;gap:1px}
+  .hero{padding:4.5rem 1.2rem 2.5rem}
   .stat-grid{grid-template-columns:repeat(3,1fr)}
   .stat-card{padding:1.2rem 1rem}
   .stat-num{font-size:2rem}
   section{padding:3rem 1.2rem}
-  .hero-badge{font-size:.62rem}
-  .hero-sub{font-size:.9rem}
   .hero-cta{flex-direction:column}
   .btn{justify-content:center;width:100%}
-  .about-grid{gap:1.5rem}
   .form-row{grid-template-columns:1fr}
   .form-submit{width:100%;justify-content:center}
-  .contact-grid{gap:2rem}
-  .ev-main{grid-template-columns:1fr}
-  .ecard{padding:1.4rem}
+  .ev-fila3{grid-template-columns:1fr}
   footer{padding:1.2rem}
 }
+
+.ecard.hero-ev.split{display:grid;grid-template-columns:1.2fr 1fr;gap:0;padding:0}
+.hero-ev-media{position:relative;overflow:hidden}
+.hero-ev-content{padding:2rem;display:flex;flex-direction:column;justify-content:center}
+@media(max-width:900px){.ecard.hero-ev.split{grid-template-columns:1fr}.hero-ev-media{order:1}.hero-ev-content{order:2}}
+
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(4px)}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--white);border-radius:8px;max-width:820px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.modal-header{padding:1.8rem 2rem 0;display:flex;justify-content:space-between;align-items:start;gap:1rem}
+.modal-title{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:700;color:var(--black)}
+.modal-close{background:none;border:none;font-size:1.4rem;color:var(--muted);cursor:pointer;line-height:1;padding:.2rem;flex-shrink:0}
+.modal-close:hover{color:var(--black)}
+.modal-tag{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-top:.3rem}
+.modal-desc{padding:1.2rem 2rem;font-size:.9rem;line-height:1.75;color:var(--muted);border-bottom:1px solid var(--border)}
+.modal-imgs{padding:1.5rem 2rem;display:flex;flex-direction:column;gap:1rem}
+.modal-img{width:100%;border-radius:6px;border:1px solid var(--border);display:block}
+.modal-mockup{width:100%;border-radius:6px;border:1px solid var(--border);display:block;overflow:hidden;background:var(--blue2);aspect-ratio:16/10}
+.modal-mockup svg{width:100%;height:100%;display:block}
+.modal-note{font-size:.78rem;color:var(--muted2);font-style:italic;padding:0 2rem 1rem;margin-top:-.6rem}
+.modal-img-caption{font-size:.72rem;color:var(--muted2);text-align:center;margin-top:.4rem;letter-spacing:.05em}
+.modal-footer{padding:1.2rem 2rem 1.8rem;display:flex;gap:1rem}
+.modal-link{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:.4rem}
+.modal-link:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -263,7 +252,6 @@ h1{animation:fadeUp .6s .2s both}
 </nav>
 
 <div class="page-wrap">
-
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge"><span></span> Disponible para nuevas oportunidades</div>
@@ -288,7 +276,6 @@ h1{animation:fadeUp .6s .2s both}
     </div>
   </div>
 </section>
-
 </div>
 
 <div class="tray">
@@ -302,7 +289,6 @@ h1{animation:fadeUp .6s .2s both}
 
 <div class="page-wrap">
 
-<!-- ABOUT -->
 <section id="about">
   <div class="sec-eyebrow reveal">01 — Perfil</div>
   <h2 class="reveal reveal-delay-1">Quién soy</h2>
@@ -328,7 +314,6 @@ h1{animation:fadeUp .6s .2s both}
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="sec-eyebrow reveal">02 — Trayectoria</div>
   <h2 class="reveal reveal-delay-1">Experiencia</h2>
@@ -353,7 +338,7 @@ h1{animation:fadeUp .6s .2s both}
       <ul class="t-bullets">
         <li>Gestión integral: tendencias, proveedores, venta directa y canales digitales.</li>
         <li>Eventos de fidelización y showrooms exclusivos.</li>
-        <li>Supervisión de KPIs y análisis de resultados para optimizar objetivos.</li>
+        <li>Supervisión de KPIs y análisis de resultados.</li>
       </ul>
     </div>
     <div class="titem">
@@ -381,89 +366,95 @@ h1{animation:fadeUp .6s .2s both}
   </a>
 </section>
 
-<!-- EVENTS -->
 <section id="events">
   <div class="sec-eyebrow reveal">03 — En el campo</div>
   <h2 class="reveal reveal-delay-1">Eventos &amp; Campañas</h2>
   <p class="events-lead reveal reveal-delay-2">Momentos reales: stands, sponsorships, activaciones y campañas regionales que muestran cómo se ve la estrategia cuando se ejecuta.</p>
 
-  <div class="ev-main reveal reveal-delay-2">
-    <div class="ecard hero-ev carousel-card touch-action-pan-y">
-      <div class="carousel-wrapper"><div class="carousel-track" id="c0-track">
-        <div class="carousel-slide"><img src="agenda-1.jpg" alt="Jornada RCP" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Jornada de RCP con partners estratégicos</div></div>
-        <div class="carousel-slide"><img src="agenda-2.jpg" alt="Congreso Regional de Seguros" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Congreso Regional de Seguros — Sponsor top</div></div>
-        <div class="carousel-slide"><img src="agenda-3.jpg" alt="Espacio VIP FAEVYT" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Espacio VIP — Congreso FAEVYT, Paraná</div></div>
-        <div class="carousel-slide"><img src="agenda-4.jpg" alt="Stand campaña Te cuesta $0" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Stand con campaña "Te cuesta $0"</div></div>
-        <div class="carousel-slide"><img src="agenda-5.jpg" alt="Evento institucional" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Presencia institucional en evento regional</div></div>
-        <div class="carousel-slide"><img src="agenda-6.jpg" alt="Workshop regional" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Workshop con red de agentes de viajes</div></div>
-        <div class="carousel-slide"><img src="agenda-7.jpg" alt="Stand feria" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Stand en feria de agencias de viajes</div></div>
-        <div class="carousel-slide"><img src="agenda-8.jpg" alt="Stand ACAV" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"><div class="slide-caption">Stand ACAV — Córdoba</div></div>
-      </div></div>
-      <div class="carousel-dots" id="c0-dots">
-        <button class="cdot active" onclick="goTo('c0',0)"></button>
-        <button class="cdot" onclick="goTo('c0',1)"></button>
-        <button class="cdot" onclick="goTo('c0',2)"></button>
-        <button class="cdot" onclick="goTo('c0',3)"></button>
-        <button class="cdot" onclick="goTo('c0',4)"></button>
-        <button class="cdot" onclick="goTo('c0',5)"></button>
-        <button class="cdot" onclick="goTo('c0',6)"></button>
-        <button class="cdot" onclick="goTo('c0',7)"></button>
-      </div>
-      <button class="carousel-btn prev" onclick="move('c0',-1)">‹</button>
-      <button class="carousel-btn next" onclick="move('c0',1)">›</button>
-      <div class="ev-tag">Agenda Regional · 2025</div>
-      <div class="ev-title">La marca se movió con nosotros</div>
-      <div class="ev-desc">Agenda regional intensa con stands institucionales, workshops y activaciones propias.</div>
-      <div class="ev-hls">
-        <div class="ev-hl">ECTU, 100% Seguros, Foro AAPAS y Congreso Regional con stands institucionales.</div>
-        <div class="ev-hl">Jornadas de RCP en Córdoba, Rosario, Mendoza y CABA con partners estratégicos.</div>
-        <div class="ev-hl">Espacio VIP desde cero en Congreso FAEVYT (Paraná) — con ambulancia y equipo médico propio.</div>
-      </div>
-    </div>
-    <div class="ev-side">
-      <div class="ecard carousel-card touch-action-pan-y" style="flex:1">
-        <div class="carousel-wrapper"><div class="carousel-track" id="c1-track">
-          <div class="carousel-slide"><img class="ev-img" src="fit-1.jpg" alt="FIT 2025" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img class="ev-img" src="fit-2.jpg" alt="FIT 2025 Stand" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img class="ev-img" src="fit-3.jpg" alt="FIT 2025 Equipo" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+  <!-- CARRUSEL PRINCIPAL: La marca se movió con nosotros -->
+  <div class="ev-principal reveal reveal-delay-2">
+    <div class="ecard hero-ev carousel-card split">
+      <div class="hero-ev-media">
+        <div class="carousel-wrapper"><div class="carousel-track" id="c0-track">
+          <div class="carousel-slide"><img src="agenda-1.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-2.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-3.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-4.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-5.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-6.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-7.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-8.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
         </div></div>
-      <div class="carousel-dots" id="c1-dots">
-          <button class="cdot active" onclick="goTo('c1',0)"></button>
-          <button class="cdot" onclick="goTo('c1',1)"></button>
-          <button class="cdot" onclick="goTo('c1',2)"></button>
+        <div class="carousel-dots" id="c0-dots">
+          <button class="cdot active" onclick="goTo('c0',0)"></button>
+          <button class="cdot" onclick="goTo('c0',1)"></button>
+          <button class="cdot" onclick="goTo('c0',2)"></button>
+          <button class="cdot" onclick="goTo('c0',3)"></button>
+          <button class="cdot" onclick="goTo('c0',4)"></button>
+          <button class="cdot" onclick="goTo('c0',5)"></button>
+          <button class="cdot" onclick="goTo('c0',6)"></button>
+          <button class="cdot" onclick="goTo('c0',7)"></button>
         </div>
-        <button class="carousel-btn prev" onclick="move('c1',-1)">‹</button>
-        <button class="carousel-btn next" onclick="move('c1',1)">›</button>
-        <div class="ev-tag">Feria Internacional · Turismo</div>
-        <div class="ev-title">FIT 2025 — 45 años de la marca</div>
-        <div class="ev-desc">Stand renovado en la feria de turismo más importante de la región. Edición especial por los 45 años de Universal Assistance.</div>
+        <button class="carousel-btn prev" onclick="move('c0',-1)" style="top:210px">‹</button>
+        <button class="carousel-btn next" onclick="move('c0',1)" style="top:210px">›</button>
       </div>
-      <div class="ecard carousel-card touch-action-pan-y" style="flex:1">
-        <div class="carousel-wrapper"><div class="carousel-track" id="c2-track">
-          <div class="carousel-slide"><img class="ev-img" src="chile-rugby-1.jpg" alt="Chile Rugby — Universal Assistance" style="height:220px;border-radius:3px;margin-bottom:0"></div>
-          <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Chile Rugby — 2</span></div></div>
-          <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Chile Rugby — 3</span></div></div>
-        </div></div>
-      <div class="carousel-dots" id="c2-dots">
-          <button class="cdot active" onclick="goTo('c2',0)"></button>
-          <button class="cdot" onclick="goTo('c2',1)"></button>
-          <button class="cdot" onclick="goTo('c2',2)"></button>
+      <div class="hero-ev-content">
+        <div class="ev-tag">Agenda Regional · 2025</div>
+        <div class="ev-title" style="font-size:1.2rem;margin-bottom:1rem">La marca se movió con nosotros</div>
+        <div class="ev-desc">Agenda regional intensa con stands institucionales, workshops y activaciones propias.</div>
+        <div class="ev-hls">
+          <div class="ev-hl">ECTU, 100% Seguros, Foro AAPAS y Congreso Regional con stands institucionales.</div>
+          <div class="ev-hl">Jornadas de RCP en Córdoba, Rosario, Mendoza y CABA con partners estratégicos.</div>
+          <div class="ev-hl">Espacio VIP desde cero en Congreso FAEVYT (Paraná) — con ambulancia y equipo médico propio.</div>
         </div>
-        <button class="carousel-btn prev" onclick="move('c2',-1)">‹</button>
-        <button class="carousel-btn next" onclick="move('c2',1)">›</button>
-        <div class="ev-tag">Sponsorship · Deporte · Chile</div>
-        <div class="ev-title">Sponsor oficial Chile Rugby</div>
-        <div class="ev-desc">Sponsor oficial de Chile Rugby — incluyendo Los Cóndores en Francia 2023.</div>
       </div>
     </div>
   </div>
 
-  <div class="ev-row reveal reveal-delay-3">
-    <div class="ecard carousel-card touch-action-pan-y">
+  <!-- FILA DE 3: FIT | Campaña | Chile Rugby -->
+  <div class="ev-fila3 reveal reveal-delay-3">
+
+    <div class="ecard carousel-card">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c1-track">
+        <div class="carousel-slide"><img src="fit-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+      </div></div>
+      <div class="carousel-dots" id="c1-dots">
+        <button class="cdot active" onclick="goTo('c1',0)"></button>
+        <button class="cdot" onclick="goTo('c1',1)"></button>
+        <button class="cdot" onclick="goTo('c1',2)"></button>
+      </div>
+      <button class="carousel-btn prev" onclick="move('c1',-1)">‹</button>
+      <button class="carousel-btn next" onclick="move('c1',1)">›</button>
+      <div class="ev-tag">Feria Internacional · Turismo</div>
+      <div class="ev-title">FIT 2025 — 45 años de la marca</div>
+      <div class="ev-desc">Stand renovado en la feria de turismo más importante de la región. Edición especial por los 45 años de Universal Assistance.</div>
+    </div>
+
+    <div class="ecard carousel-card">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c2-track">
+        <div class="carousel-slide"><img src="campana-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Campaña — 2</span></div></div>
+        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Campaña — 3</span></div></div>
+      </div></div>
+      <div class="carousel-dots" id="c2-dots">
+        <button class="cdot active" onclick="goTo('c2',0)"></button>
+        <button class="cdot" onclick="goTo('c2',1)"></button>
+        <button class="cdot" onclick="goTo('c2',2)"></button>
+      </div>
+      <button class="carousel-btn prev" onclick="move('c2',-1)">‹</button>
+      <button class="carousel-btn next" onclick="move('c2',1)">›</button>
+      <div class="ev-tag">Campaña Regional</div>
+      <div class="ev-title">Campaña "Te cuesta $0"</div>
+      <div class="ev-desc">Campaña regional con activación interna. Mensaje directo, impacto en toda la región.</div>
+    </div>
+
+    <div class="ecard carousel-card">
       <div class="carousel-wrapper"><div class="carousel-track" id="c3-track">
-        <div class="carousel-slide"><img src="campana-1.jpg" alt="Campaña Te cuesta $0" style="height:220px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Campaña — 2</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Campaña — 3</span></div></div>
+        <div class="carousel-slide"><img src="chile-rugby-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Chile Rugby — 2</span></div></div>
+        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Chile Rugby — 3</span></div></div>
       </div></div>
       <div class="carousel-dots" id="c3-dots">
         <button class="cdot active" onclick="goTo('c3',0)"></button>
@@ -472,78 +463,57 @@ h1{animation:fadeUp .6s .2s both}
       </div>
       <button class="carousel-btn prev" onclick="move('c3',-1)">‹</button>
       <button class="carousel-btn next" onclick="move('c3',1)">›</button>
-      <div class="ev-tag">Campaña Regional</div>
-      <div class="ev-title">Campaña "Te cuesta $0"</div>
-      <div class="ev-desc">Campaña regional con activación interna. Mensaje directo, impacto en toda la región.</div>
+      <div class="ev-tag">Sponsorship · Deporte · Chile</div>
+      <div class="ev-title">Sponsor oficial Chile Rugby</div>
+      <div class="ev-desc">Sponsor oficial de Chile Rugby — incluyendo Los Cóndores en Francia 2023.</div>
     </div>
-    <div class="ecard carousel-card touch-action-pan-y">
-      <div class="carousel-wrapper"><div class="carousel-track" id="c4-track">
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 1</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 2</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 3</span></div></div>
-      </div></div>
-      <div class="carousel-dots" id="c4-dots">
-        <button class="cdot active" onclick="goTo('c4',0)"></button>
-        <button class="cdot" onclick="goTo('c4',1)"></button>
-        <button class="cdot" onclick="goTo('c4',2)"></button>
-      </div>
-      <button class="carousel-btn prev" onclick="move('c4',-1)">‹</button>
-      <button class="carousel-btn next" onclick="move('c4',1)">›</button>
-      <div class="ev-tag">Próximamente</div>
-      <div class="ev-title">Slot para tu próximo evento</div>
-      <div class="ev-desc">Esta sección está preparada para crecer con cada nuevo evento.</div>
-    </div>
-    <div class="ecard carousel-card touch-action-pan-y">
-      <div class="carousel-wrapper"><div class="carousel-track" id="c5-track">
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 1</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 2</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:220px;border-radius:3px;margin-bottom:0"><span>Evento — 3</span></div></div>
-      </div></div>
-      <div class="carousel-dots" id="c5-dots">
-        <button class="cdot active" onclick="goTo('c5',0)"></button>
-        <button class="cdot" onclick="goTo('c5',1)"></button>
-        <button class="cdot" onclick="goTo('c5',2)"></button>
-      </div>
-      <button class="carousel-btn prev" onclick="move('c5',-1)">‹</button>
-      <button class="carousel-btn next" onclick="move('c5',1)">›</button>
-      <div class="ev-tag">Próximamente</div>
-      <div class="ev-title">Slot disponible</div>
-      <div class="ev-desc">Cada nuevo evento o activación suma a este portfolio.</div>
-    </div>
+
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
   <div class="sec-eyebrow reveal">04 — Herramientas digitales</div>
   <h2 class="reveal reveal-delay-1">Proyectos</h2>
-  <p class="proj-intro reveal reveal-delay-2">Proyectos desarrollados para dar autonomía a los equipos comerciales, permitiéndoles resolver necesidades del día a día sin depender de procesos intermedios.</p>
+  <p class="proj-intro reveal reveal-delay-2">Plataformas propias, desarrolladas para dar autonomía a los equipos comerciales de la región, permitiéndoles resolver necesidades del día a día sin depender de procesos intermedios.</p>
   <div class="proj-grid reveal reveal-delay-2">
-    <a href="https://kevinszalai.github.io/ua-logo-compositor/" target="_blank" rel="noopener" class="proj-card">
-      <div class="proj-tag">Branding · Herramienta</div>
-      <div class="proj-num">01</div>
-      <div class="proj-title">Compositor de Cobranding</div>
-      <div class="proj-desc">Herramienta web para que canales comerciales generen piezas de cobranding de forma autónoma, manteniendo coherencia visual de marca.</div>
-      <div class="proj-link">Ver proyecto</div>
-    </a>
-    <a href="https://kevinszalai.github.io/perfiles-cobertura2/" target="_blank" rel="noopener" class="proj-card">
-      <div class="proj-tag">Comercial · UX</div>
-      <div class="proj-num">02</div>
-      <div class="proj-title">Perfiles de Cobertura</div>
-      <div class="proj-desc">Plataforma interactiva para que asesores consulten y presenten perfiles de productos, mejorando conversión en el punto de venta.</div>
-      <div class="proj-link">Ver proyecto</div>
-    </a>
-    <a href="https://kevinszalai.github.io/tarjetaqr/" target="_blank" rel="noopener" class="proj-card">
+    <div class="proj-card" onclick="openModal('tarjetas')" style="cursor:pointer">
       <div class="proj-tag">Ventas · Digital</div>
-      <div class="proj-num">03</div>
+      <div class="proj-num">01</div>
       <div class="proj-title">Tarjetas Virtuales con QR</div>
-      <div class="proj-desc">Generador de tarjetas virtuales personalizadas para equipos de venta en ferias y eventos comerciales.</div>
+      <div class="proj-desc">Generador de tarjetas de presentación digitales con QR, para compartir contacto al instante en eventos y ferias.</div>
       <div class="proj-link">Ver proyecto</div>
-    </a>
+    </div>
+    <div class="proj-card" onclick="openModal('cobranding')" style="cursor:pointer">
+      <div class="proj-tag">Branding · Herramienta</div>
+      <div class="proj-num">02</div>
+      <div class="proj-title">Compositor de Cobranding</div>
+      <div class="proj-desc">Plataforma para que cada país arme piezas cobrandeadas con partners locales, sin depender de diseño.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+    <div class="proj-card" onclick="openModal('perfiles')" style="cursor:pointer">
+      <div class="proj-tag">Comercial · UX</div>
+      <div class="proj-num">03</div>
+      <div class="proj-title">Perfiles de Cobertura</div>
+      <div class="proj-desc">Herramienta interna que eliminó el proceso manual de armado de perfiles. El equipo comercial genera PDFs con marca institucional en minutos.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+    <div class="proj-card" onclick="openModal('promos')" style="cursor:pointer">
+      <div class="proj-tag">Comercial · Marketing</div>
+      <div class="proj-num">04</div>
+      <div class="proj-title">Piezas para Promociones</div>
+      <div class="proj-desc">Editor de flyers promocionales sobre plantillas aprobadas, con flujo de revisión antes de publicar.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+    <div class="proj-card" onclick="openModal('invitaciones')" style="cursor:pointer">
+      <div class="proj-tag">Eventos · Digital</div>
+      <div class="proj-num">05</div>
+      <div class="proj-title">Editor de Invitaciones</div>
+      <div class="proj-desc">Editor visual para armar invitaciones a eventos en formato Story o Email, con QR de inscripción.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
   <div class="sec-eyebrow reveal">05 — Contacto</div>
   <h2 class="reveal reveal-delay-1">Hablemos</h2>
@@ -580,29 +550,16 @@ h1{animation:fadeUp .6s .2s both}
 
 <script>
 // REVEAL
-const reveals = document.querySelectorAll('.reveal');
-const revealObs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObs.unobserve(e.target); }});
-}, {threshold:.1});
-reveals.forEach(el => revealObs.observe(el));
+const reveals=document.querySelectorAll('.reveal');
+const revealObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}});},{threshold:.1});
+reveals.forEach(el=>revealObs.observe(el));
 
 // COUNTERS
-const statNums = document.querySelectorAll('.stat-num');
-const targets = {'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'3':{val:3,suffix:''},'∞':{val:null}};
-function animCount(el,target,suffix,dur){
-  let start=null;
-  const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*target)+suffix;if(p<1)requestAnimationFrame(step)};
-  requestAnimationFrame(step);
-}
-function animInf(el,dur){
-  el.style.opacity='0';el.style.transform='scale(0.4)';
-  let start=null;
-  const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.style.opacity=e;el.style.transform='scale('+(0.4+e*0.6)+')';if(p<1)requestAnimationFrame(step);else{el.style.opacity='1';el.style.transform='scale(1)'}};
-  requestAnimationFrame(step);
-}
-const numObs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;const t=targets[el.textContent.trim()];if(t){if(t.val===null)animInf(el,900);else animCount(el,t.val,t.suffix,900);numObs.unobserve(el);}});
-},{threshold:.5});
+const statNums=document.querySelectorAll('.stat-num');
+const targets={'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'3':{val:3,suffix:''},'∞':{val:null}};
+function animCount(el,target,suffix,dur){let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*target)+suffix;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);}
+function animInf(el,dur){el.style.opacity='0';el.style.transform='scale(0.4)';let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.style.opacity=e;el.style.transform='scale('+(0.4+e*0.6)+')';if(p<1)requestAnimationFrame(step);else{el.style.opacity='1';el.style.transform='scale(1)'}};requestAnimationFrame(step);}
+const numObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;const t=targets[el.textContent.trim()];if(t){if(t.val===null)animInf(el,900);else animCount(el,t.val,t.suffix,900);numObs.unobserve(el);}});},{threshold:.5});
 statNums.forEach(el=>numObs.observe(el));
 
 // CAROUSEL
@@ -614,24 +571,233 @@ function initCarousel(id){
   const track=document.getElementById(id+'-track');
   if(!track)return;
   const card=track.closest('.carousel-card');
-  // Contar slides con imagen real (no placeholder)
   const realSlides=Array.from(slides).filter(s=>s.querySelector('img')).length;
-  const showControls = realSlides > 1;
+  const showControls=realSlides>1;
   const dots=document.getElementById(id+'-dots');
   if(dots)dots.style.display=showControls?'flex':'none';
-  if(card){card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display=showControls?'flex':'none');}
+  if(card)card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display=showControls?'flex':'none');
   let startX=0;
   track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
   track.addEventListener('touchend',e=>{const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40&&total>1)move(id,diff>0?1:-1);},{passive:true});
 }
-document.addEventListener('DOMContentLoaded',()=>['c0','c1','c2','c3','c4','c5'].forEach(initCarousel));
+document.addEventListener('DOMContentLoaded',()=>['c0','c1','c2','c3'].forEach(initCarousel));
 setInterval(()=>move('c0',1),3500);
 function goTo(id,idx){const c=carousels[id];c.current=idx;document.getElementById(id+'-track').style.transform='translateX(-'+idx*100+'%)';document.querySelectorAll('#'+id+'-dots .cdot').forEach((d,i)=>d.classList.toggle('active',i===idx));}
-function move(id,dir){const c=carousels[id];goTo(id,(c.current+dir+c.total)%c.total);}
+function move(id,dir){const c=carousels[id];if(!c)return;goTo(id,(c.current+dir+c.total)%c.total);}
 
 // FORM
 const form=document.getElementById('contact-form');
 if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=form.querySelector('.form-submit');btn.textContent='Enviando...';btn.disabled=true;try{const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(res.ok){form.reset();document.getElementById('form-success').style.display='block';btn.textContent='Enviado ✓';}else{btn.textContent='Error, intentá de nuevo';btn.disabled=false;}}catch{btn.textContent='Error, intentá de nuevo';btn.disabled=false;}});}
+</script>
+
+<div class="modal-overlay" id="modal-tarjetas" onclick="closeModalOutside(event,'tarjetas')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Ventas · Digital · Herramienta interna</div>
+        <div class="modal-title">Tarjetas Virtuales con QR</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('tarjetas')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Diseñé y desarrollé esta herramienta para que cada comercial arme su propia tarjeta de presentación digital — con foto, datos de contacto y un código QR que carga el contacto directo al celular de quien la escanea. Pensada para eventos y ferias, donde compartir datos rápido y sin depender de tarjetas de papel hace la diferencia. Exporta en alta resolución, lista para compartir por WhatsApp o LinkedIn.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#003d6b"/>
+          <rect x="30" y="35" width="210" height="180" rx="16" fill="#ffffff" opacity="0.06"/>
+          <rect x="30" y="35" width="210" height="180" rx="16" fill="none" stroke="#00C4DF" stroke-width="1.5"/>
+          <circle cx="85" cy="90" r="26" fill="url(#g1)"/>
+          <rect x="30" y="140" width="140" height="11" rx="5" fill="#ffffff" opacity="0.9"/>
+          <rect x="30" y="160" width="105" height="9" rx="4" fill="#00C4DF"/>
+          <rect x="30" y="184" width="160" height="7" rx="3" fill="#ffffff" opacity="0.35"/>
+          <rect x="30" y="198" width="120" height="7" rx="3" fill="#ffffff" opacity="0.35"/>
+          <g transform="translate(272,68)">
+            <rect width="100" height="100" rx="10" fill="#ffffff"/>
+            <g fill="#003d6b">
+              <rect x="8" y="8" width="15" height="15"/><rect x="30" y="8" width="8" height="8"/><rect x="48" y="8" width="8" height="15"/><rect x="68" y="8" width="15" height="15"/>
+              <rect x="8" y="30" width="8" height="8"/><rect x="30" y="30" width="8" height="8"/><rect x="68" y="30" width="8" height="8"/>
+              <rect x="8" y="48" width="15" height="8"/><rect x="48" y="48" width="8" height="15"/><rect x="68" y="48" width="15" height="8"/>
+              <rect x="8" y="68" width="15" height="15"/><rect x="30" y="68" width="8" height="8"/><rect x="48" y="68" width="8" height="8"/><rect x="68" y="68" width="15" height="15"/>
+            </g>
+          </g>
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00C4DF"/><stop offset="1" stop-color="#00528F"/></linearGradient></defs>
+        </svg></div>
+        <div class="modal-img-caption">Tarjeta digital con foto, datos y QR de contacto directo</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/tarjetaqr/" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cobranding" onclick="closeModalOutside(event,'cobranding')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Branding · Multi-país · Herramienta interna</div>
+        <div class="modal-title">Compositor de Cobranding</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('cobranding')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Desarrollé esta plataforma para resolver un cuello de botella real: cada vez que se cerraba una alianza con un partner local, armar la pieza con los dos logos bien puestos dependía de pedirlo a diseño. Con esta herramienta, cada país genera su propia pieza con acceso restringido por mercado, detección automática cuando hay dos logos, y fechas de vencimiento configuradas para que ninguna pieza vieja siga circulando.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#008091"/>
+          <rect x="35" y="60" width="140" height="130" rx="14" fill="#ffffff"/>
+          <circle cx="105" cy="115" r="24" fill="#00528F"/>
+          <rect x="65" y="155" width="80" height="9" rx="4" fill="#00528F" opacity="0.5"/>
+          <circle cx="200" cy="125" r="18" fill="#003d6b"/>
+          <text x="200" y="132" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" font-weight="700">+</text>
+          <rect x="225" y="60" width="140" height="130" rx="14" fill="#ffffff"/>
+          <rect x="253" y="95" width="82" height="30" rx="6" fill="#00C4DF"/>
+          <rect x="253" y="155" width="82" height="9" rx="4" fill="#00528F" opacity="0.5"/>
+          <g transform="translate(35,205)">
+            <rect width="28" height="18" rx="3" fill="#ffffff" opacity="0.9"/>
+            <rect x="34" width="28" height="18" rx="3" fill="#ffffff" opacity="0.55"/>
+            <rect x="68" width="28" height="18" rx="3" fill="#ffffff" opacity="0.9"/>
+            <rect x="102" width="28" height="18" rx="3" fill="#ffffff" opacity="0.55"/>
+            <rect x="136" width="28" height="18" rx="3" fill="#ffffff" opacity="0.9"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Composición de dos marcas con detección automática de layout</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/compositor/index.html" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-perfiles" onclick="closeModalOutside(event,'perfiles')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Comercial · UX · Herramienta interna</div>
+        <div class="modal-title">Generador de Perfiles de Cobertura</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('perfiles')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Herramienta web interna que eliminó el proceso manual de armado de perfiles de cobertura. El equipo comercial genera PDFs con marca institucional en minutos, con login corporativo por OTP. El contenido de cobertura lo carga y mantiene marketing/producto — el comercial solo completa datos y descarga, sin depender del equipo de diseño. Todo en un único archivo HTML.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#00528F"/>
+          <rect x="120" y="25" width="160" height="200" rx="10" fill="#ffffff"/>
+          <rect x="138" y="48" width="70" height="11" rx="5" fill="#003d6b"/>
+          <rect x="138" y="70" width="120" height="6" rx="3" fill="#00528F" opacity="0.4"/>
+          <rect x="138" y="82" width="120" height="6" rx="3" fill="#00528F" opacity="0.4"/>
+          <g fill="#008091">
+            <circle cx="146" cy="112" r="6"/><rect x="158" y="109" width="98" height="6" rx="3" opacity="0.7"/>
+            <circle cx="146" cy="134" r="6"/><rect x="158" y="131" width="98" height="6" rx="3" opacity="0.7"/>
+            <circle cx="146" cy="156" r="6"/><rect x="158" y="153" width="68" height="6" rx="3" opacity="0.7"/>
+          </g>
+          <rect x="138" y="185" width="120" height="26" rx="6" fill="#00C4DF"/>
+          <text x="198" y="202" font-family="Arial" font-size="11" fill="#003d6b" text-anchor="middle" font-weight="700">DESCARGAR PDF</text>
+          <g transform="translate(60,120)">
+            <circle r="28" fill="#003d6b" stroke="#00C4DF" stroke-width="2"/>
+            <rect x="-9" y="-4" width="18" height="14" rx="2" fill="none" stroke="#fff" stroke-width="1.6"/>
+            <path d="M-6,-4 v-5 a6 6 0 0 1 12 0 v5" fill="none" stroke="#fff" stroke-width="1.6"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Acceso con login corporativo y generación de PDF en un paso</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/generadorperfil/" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-promos" onclick="closeModalOutside(event,'promos')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Comercial · Marketing · Herramienta interna</div>
+        <div class="modal-title">Generador de Piezas para Promociones</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('promos')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Construí este editor para que el equipo comercial cargue el descuento y la financiación de su campaña puntual sobre una plantilla ya aprobada, sin tocar el arte base. Cada pieza pasa por un flujo de aprobación antes de salir a la calle, así ninguna promoción incorrecta llega a circular. Corre sobre plantillas SVG con capas bloqueables y un catálogo configurable.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#00C4DF"/>
+          <rect x="30" y="25" width="340" height="200" rx="14" fill="#003d6b"/>
+          <text x="200" y="140" font-family="Arial" font-size="70" fill="#ffffff" text-anchor="middle" font-weight="700">40%</text>
+          <rect x="105" y="175" width="190" height="20" rx="10" fill="#00528F"/>
+          <text x="200" y="189" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">6 CUOTAS SIN INTERÉS</text>
+          <g transform="translate(310,45)">
+            <rect width="34" height="34" rx="8" fill="#008091"/>
+            <path d="M17 11a4.5 4.5 0 0 0-4.5 4.5v2.5h9v-2.5a4.5 4.5 0 0 0-4.5-4.5z" fill="none" stroke="#fff" stroke-width="1.7"/>
+            <rect x="10" y="18" width="14" height="10" rx="2" fill="#fff"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Pieza generada a partir de una plantilla aprobada, con capas protegidas</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/ua-promo-platform-/index.html" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-invitaciones" onclick="closeModalOutside(event,'invitaciones')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Eventos · Digital · Herramienta interna</div>
+        <div class="modal-title">Editor de Invitaciones</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('invitaciones')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Diseñé un editor sobre Canvas para armar la invitación a un evento en minutos, en formato Story para redes o Email, con QR de inscripción incluido. La paleta y las posiciones editables quedan acotadas desde un panel de administración, para que la pieza final nunca se salga de marca.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#00528F"/>
+          <rect x="150" y="18" width="130" height="214" rx="16" fill="#003d6b"/>
+          <rect x="150" y="18" width="130" height="214" rx="16" fill="none" stroke="#00C4DF" stroke-width="1.5"/>
+          <rect x="168" y="45" width="94" height="9" rx="4" fill="#00C4DF"/>
+          <rect x="168" y="68" width="70" height="16" rx="4" fill="#ffffff"/>
+          <rect x="168" y="96" width="94" height="7" rx="3" fill="#ffffff" opacity="0.5"/>
+          <rect x="168" y="110" width="70" height="7" rx="3" fill="#ffffff" opacity="0.5"/>
+          <rect x="190" y="165" width="50" height="50" rx="6" fill="#ffffff"/>
+          <g transform="translate(45,80)">
+            <rect width="86" height="60" rx="10" fill="#ffffff" opacity="0.95"/>
+            <rect x="12" y="14" width="50" height="7" rx="3" fill="#003d6b"/>
+            <rect x="12" y="28" width="62" height="5" rx="2.5" fill="#00528F" opacity="0.6"/>
+            <rect x="12" y="40" width="40" height="5" rx="2.5" fill="#00528F" opacity="0.6"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Invitación en formato Story, con QR de inscripción</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    
+  </div>
+</div>
+
+<script>
+function openModal(id){document.getElementById('modal-'+id).classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.style.overflow='';}
+function closeModalOutside(e,id){if(e.target===document.getElementById('modal-'+id))closeModal(id);}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.modal-overlay.open').forEach(m=>m.classList.remove('open'));document.body.style.overflow='';}});
 </script>
 </body>
 </html>
