@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Kevin Szalai — Marketing & Publicidad LATAM</title>
+<meta name="description" content="Kevin Szalai — Analista Sr. de Marketing y Publicidad con trayectoria regional en LATAM. Estrategias 360°, eventos de gran escala, fidelización y campañas de impacto.">
+<meta property="og:title" content="Kevin Szalai — Marketing & Publicidad LATAM">
+<meta property="og:description" content="Analista Sr. de Marketing y Publicidad con trayectoria regional en LATAM.">
+<meta property="og:image" content="https://kevinszalai.github.io/preview.jpg">
+<meta property="og:url" content="https://kevinszalai.github.io/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300528F'/><text x='16' y='22' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'>KS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;width:100%;background:#f5f4f0}
+:root{
+  --bg:#f5f4f0;--bg2:#edecea;--white:#ffffff;--black:#111111;
+  --blue:#00528F;--blue2:#003d6b;--blue-light:#e8f0f8;--teal:#008091;--cyan:#00C4DF;
+  --text:#1a1a1a;--muted:#6b6b6b;--muted2:#9a9a9a;--border:#dddbd7;--border2:#c8c5c0;
+}
+body{color:var(--text);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(245,244,240,0.92);border-bottom:1px solid var(--border);backdrop-filter:blur(16px)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:1rem 3rem;display:flex;justify-content:space-between;align-items:center}
+.nav-logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:var(--blue);text-decoration:none}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+
+.page-wrap{max-width:1280px;margin:0 auto;width:100%}
+
+.hero{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;padding:7rem 3rem 4rem;gap:5rem;background:var(--bg);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;right:-5%;top:-20%;width:55%;height:140%;background:var(--blue);clip-path:polygon(15% 0,100% 0,100% 100%,0% 100%);opacity:.04;pointer-events:none}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue-light);border:1px solid rgba(0,82,143,.15);border-radius:100px;padding:.35rem .9rem;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:1.6rem}
+.hero-badge span{width:6px;height:6px;border-radius:50%;background:var(--blue);display:inline-block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2.8rem,5vw,5rem);font-weight:700;line-height:1.05;color:var(--black)}
+h1 .accent{color:var(--blue)}
+h1 .stroke{-webkit-text-stroke:2px var(--black);color:transparent}
+.hero-sub{margin-top:1.5rem;font-size:1rem;line-height:1.8;color:var(--muted);max-width:440px}
+.hero-cta{margin-top:2.2rem;display:flex;gap:1rem;flex-wrap:wrap}
+.btn{padding:.8rem 1.8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:all .25s;font-family:'Inter',sans-serif;font-weight:500;display:inline-flex;align-items:center;gap:.5rem}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 20px rgba(0,82,143,.25)}
+.btn-primary:hover{background:var(--blue2);transform:translateY(-2px)}
+.btn-secondary{border:1.5px solid var(--border2);color:var(--text)}
+.btn-secondary:hover{border-color:var(--blue);color:var(--blue)}
+
+.hero-right{display:flex;flex-direction:column;gap:1px;background:var(--border)}
+.stat-card{background:var(--white);padding:1.8rem 2rem;transition:background .25s}
+.stat-card:hover{background:var(--blue-light)}
+.stat-card.featured{background:var(--blue);color:#fff}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:700;line-height:1;color:var(--blue)}
+.stat-card.featured .stat-num{color:#fff}
+.stat-label{margin-top:.3rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
+.stat-card.featured .stat-label{color:rgba(255,255,255,.6)}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1}
+
+.tray{background:var(--white);border-top:1px solid var(--border);padding:.65rem 3rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;max-width:1280px;margin:0 auto;width:100%}
+.tray-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted2);white-space:nowrap}
+.tray-item{font-size:.82rem;color:var(--muted);font-weight:500}
+.tray-dot{color:var(--border2)}
+
+section{padding:5rem 3rem;position:relative}
+.sec-eyebrow{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);margin-bottom:.9rem;display:flex;align-items:center;gap:.7rem}
+.sec-eyebrow::before{content:'';display:block;width:24px;height:1.5px;background:var(--blue)}
+h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:var(--black);margin-bottom:1rem;line-height:1.05}
+
+#about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:5rem;align-items:start;margin-top:3rem}
+.about-text p{font-size:.97rem;line-height:1.85;color:var(--muted);margin-bottom:1.2rem}
+.about-text p strong{color:var(--text);font-weight:600}
+.skill-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.skill-tag{background:var(--blue-light);border:1px solid rgba(0,82,143,.12);padding:.35rem .85rem;font-size:.72rem;border-radius:3px;color:var(--blue);font-weight:500}
+.info-card{background:var(--bg);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.info-item{padding:.9rem 1.4rem;border-bottom:1px solid var(--border);display:flex;flex-direction:column;gap:.2rem}
+.info-item:last-child{border-bottom:none}
+.info-label{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--blue);opacity:.7}
+.info-val{font-size:.88rem;color:var(--text);line-height:1.5}
+
+#experience{background:var(--bg2)}
+.timeline{position:relative;padding-left:1.5rem;margin-top:3rem}
+.timeline::before{content:'';position:absolute;left:0;top:.5rem;bottom:0;width:2px;background:linear-gradient(to bottom,var(--blue) 0%,rgba(0,82,143,.1) 100%)}
+.titem{position:relative;padding:0 0 3rem 3rem}
+.titem::before{content:'';position:absolute;left:-5px;top:.45rem;width:12px;height:12px;border-radius:50%;background:var(--blue);border:2px solid var(--bg2);box-shadow:0 0 0 3px rgba(0,82,143,.15)}
+.t-period{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);opacity:.7;margin-bottom:.3rem}
+.t-role{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:700;margin-bottom:.15rem;color:var(--black)}
+.t-company{font-size:.83rem;color:var(--muted);margin-bottom:1rem}
+.t-bullets{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.t-bullets li{font-size:.88rem;line-height:1.7;color:var(--muted);padding-left:1rem;position:relative}
+.t-bullets li::before{content:'›';position:absolute;left:0;color:var(--blue);font-weight:700}
+
+#events{background:var(--white);padding-bottom:2rem;padding-top:5rem}
+.events-lead{font-size:.97rem;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:3rem}
+
+/* LAYOUT EVENTOS: principal arriba, 3 abajo */
+.ev-principal{border-radius:10px;overflow:hidden;margin-bottom:8px;margin-top:.5rem}
+.ev-fila3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:4px;overflow:hidden}
+
+.ecard{background:var(--white);padding:2rem;position:relative;overflow:hidden;transition:background .25s}
+.ecard:hover{background:var(--blue-light)}
+.ecard.hero-ev{background:var(--blue);color:#fff}
+.ecard.hero-ev:hover{background:var(--blue2)}
+.ev-tag{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.6rem;font-weight:500}
+.ecard.hero-ev .ev-tag{color:rgba(255,255,255,.6)}
+.ev-title{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:700;line-height:1.25;margin-bottom:.6rem;color:var(--black)}
+.ecard.hero-ev .ev-title{color:#fff}
+.ev-desc{font-size:.83rem;line-height:1.7;color:var(--muted);margin-bottom:1rem}
+.ecard.hero-ev .ev-desc{color:rgba(255,255,255,.7)}
+.ev-hls{display:flex;flex-direction:column;gap:.35rem}
+.ev-hl{font-size:.8rem;line-height:1.6;color:var(--muted);padding-left:1rem;position:relative}
+.ev-hl::before{content:'✓';position:absolute;left:0;color:var(--teal);font-size:.72rem}
+.ecard.hero-ev .ev-hl{color:rgba(255,255,255,.65)}
+.ecard.hero-ev .ev-hl::before{color:var(--cyan)}
+.ev-img-ph{width:100%;border-radius:3px;margin-bottom:0;background:rgba(0,82,143,.08);border:1.5px dashed rgba(0,82,143,.2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.4rem}
+.ev-img-ph span{font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(0,82,143,.4)}
+.ecard.hero-ev .ev-img-ph{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2)}
+.ecard.hero-ev .ev-img-ph span{color:rgba(255,255,255,.4)}
+.slide-caption{font-size:.7rem;color:var(--muted2);letter-spacing:.06em;padding:.4rem 0 .2rem;text-align:center;min-height:1.3rem}
+.ecard.hero-ev .slide-caption{color:rgba(255,255,255,.4)}
+
+.carousel-card{position:relative;overflow:hidden}
+.carousel-wrapper{overflow:hidden;width:100%;border-radius:0}
+.carousel-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);width:100%}
+.carousel-slide{min-width:100%;flex-shrink:0;width:100%}
+.carousel-dots{display:flex;justify-content:center;gap:5px;padding:8px 0 12px}
+.cdot{width:5px;height:5px;border-radius:50%;background:rgba(0,82,143,.2);cursor:pointer;transition:all .25s;border:none;padding:0}
+.ecard.hero-ev .cdot{background:rgba(255,255,255,.25)}
+.cdot.active{background:var(--blue);transform:scale(1.4)}
+.ecard.hero-ev .cdot.active{background:#fff}
+.carousel-btn{position:absolute;top:110px;transform:translateY(-50%);background:var(--white);border:1px solid var(--border);color:var(--text);width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:.9rem;display:flex;align-items:center;justify-content:center;z-index:10;transition:all .2s;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.carousel-btn:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.carousel-btn.prev{left:6px}
+.carousel-btn.next{right:6px}
+.ecard.hero-ev .carousel-btn{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.3);color:#fff}
+.ecard.hero-ev .carousel-btn:hover{background:rgba(255,255,255,.3)}
+
+#projects{background:var(--bg2)}
+.proj-intro{font-size:.97rem;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:3rem}
+.proj-grid-top{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-radius:4px 4px 0 0;overflow:hidden;margin-bottom:2px}.proj-grid-bot{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:0 0 4px 4px;overflow:hidden}
+.proj-card{background:var(--white);padding:2rem 1.8rem;text-decoration:none;color:inherit;display:block;transition:background .25s;position:relative;overflow:hidden}
+.proj-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.proj-card:hover{background:var(--blue-light)}
+.proj-card:hover::after{transform:scaleX(1)}
+.proj-card{opacity:0;transform:translateY(16px);transition:background .25s,opacity .5s,transform .5s}
+.proj-card.visible{opacity:1;transform:translateY(0)}
+.proj-tag{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem;font-weight:500}
+.proj-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;color:rgba(0,82,143,.1);line-height:1;margin-bottom:.4rem}
+.proj-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:.6rem;line-height:1.2;color:var(--black)}
+.proj-desc{font-size:.83rem;line-height:1.7;color:var(--muted);margin-bottom:1.3rem}
+.proj-link{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue);display:flex;align-items:center;gap:.4rem;font-weight:500}
+.proj-link::after{content:'↗';transition:transform .2s}
+.proj-card:hover .proj-link::after{transform:translate(2px,-2px)}
+
+#contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start;margin-top:3rem}
+.contact-hl{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;line-height:1.05;margin-bottom:1rem;color:var(--black)}
+.contact-hl .accent{color:var(--blue)}
+.contact-sub{font-size:.95rem;line-height:1.8;color:var(--muted);margin-bottom:1.5rem}
+.contact-form{display:flex;flex-direction:column;gap:.6rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.form-field{display:flex;flex-direction:column;gap:.35rem}
+.form-field label{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted2)}
+.form-field input,.form-field textarea{background:var(--bg);border:1.5px solid var(--border);border-radius:4px;padding:.8rem 1rem;font-size:.88rem;color:var(--text);font-family:'Inter',sans-serif;outline:none;transition:border-color .2s;resize:none}
+.form-field input:focus,.form-field textarea:focus{border-color:var(--blue);background:var(--white)}
+.form-field input::placeholder,.form-field textarea::placeholder{color:var(--muted2)}
+.form-submit{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:.85rem 2rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;cursor:pointer;transition:all .25s;align-self:flex-start;display:flex;align-items:center;gap:.5rem}
+.form-submit:hover{background:var(--blue2);transform:translateY(-2px)}
+.form-success{display:none;background:#e8f5ee;border:1px solid #b3dfc4;border-radius:4px;padding:.9rem 1.2rem;font-size:.85rem;color:#1a6b3a;margin-top:.8rem}
+.li-btn{display:inline-flex;align-items:center;gap:.6rem;border:1.5px solid var(--border2);color:var(--text);border-radius:4px;padding:.7rem 1.4rem;font-size:.78rem;text-decoration:none;font-weight:500;transition:all .25s}
+.li-btn:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-light)}
+
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:1.8rem 3rem;display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-size:.73rem;color:var(--muted2)}
+.footer-name{font-family:'Space Grotesk',sans-serif;font-size:.85rem;color:var(--blue);font-weight:700}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s cubic-bezier(.4,0,.2,1),transform .65s cubic-bezier(.4,0,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:.1s}
+.reveal-delay-2{transition-delay:.2s}
+.reveal-delay-3{transition-delay:.3s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{animation:fadeUp .6s .1s both}
+h1{animation:fadeUp .6s .2s both}
+.hero-sub{animation:fadeUp .6s .3s both}
+.hero-cta{animation:fadeUp .6s .4s both}
+.hero-right{animation:fadeUp .6s .5s both}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+
+@media(max-width:900px){
+  .nav-inner{padding:1rem 1.5rem}.nav-links{gap:1.4rem}
+  .hero{grid-template-columns:1fr;padding:5.5rem 1.5rem 3rem;gap:2.5rem}
+  section{padding:4rem 1.5rem}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .proj-grid-top,.proj-grid-bot,.ev-fila3{grid-template-columns:1fr}
+  .tray{padding:.65rem 1.5rem}
+  footer{padding:1.5rem;flex-direction:column;gap:.8rem;text-align:center}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  h1{font-size:2.3rem}
+  .hero{padding:4.5rem 1.2rem 2.5rem}
+  .stat-grid{grid-template-columns:repeat(3,1fr)}
+  .stat-card{padding:1.2rem 1rem}
+  .stat-num{font-size:2rem}
+  section{padding:3rem 1.2rem}
+  .hero-cta{flex-direction:column}
+  .btn{justify-content:center;width:100%}
+  .form-row{grid-template-columns:1fr}
+  .form-submit{width:100%;justify-content:center}
+  .ev-fila3{grid-template-columns:1fr}
+  footer{padding:1.2rem}
+}
+
+.ecard.hero-ev.split{display:grid;grid-template-columns:1.2fr 1fr;gap:0;padding:0;border-radius:10px;overflow:hidden}
+.hero-ev-media{position:relative;overflow:hidden;padding:1.2rem 0 1.2rem 1.2rem}
+.hero-ev-content{padding:2rem;display:flex;flex-direction:column;justify-content:center}
+@media(max-width:900px){.ecard.hero-ev.split{grid-template-columns:1fr}.hero-ev-media{order:1}.hero-ev-content{order:2}}
+
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;align-items:center;justify-content:center;padding:1.5rem;backdrop-filter:blur(4px)}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--white);border-radius:8px;max-width:820px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.modal-header{padding:1.8rem 2rem 0;display:flex;justify-content:space-between;align-items:start;gap:1rem}
+.modal-title{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:700;color:var(--black)}
+.modal-close{background:none;border:none;font-size:1.4rem;color:var(--muted);cursor:pointer;line-height:1;padding:.2rem;flex-shrink:0}
+.modal-close:hover{color:var(--black)}
+.modal-tag{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:500;margin-top:.3rem}
+.modal-desc{padding:1.2rem 2rem;font-size:.9rem;line-height:1.75;color:var(--muted);border-bottom:1px solid var(--border)}
+.modal-imgs{padding:1.5rem 2rem;display:flex;flex-direction:column;gap:1rem}
+.modal-img{width:100%;border-radius:6px;border:1px solid var(--border);display:block}
+.modal-mockup{width:100%;border-radius:6px;border:1px solid var(--border);display:block;overflow:hidden;background:var(--blue2);aspect-ratio:16/10}
+.modal-mockup svg{width:100%;height:100%;display:block}
+.modal-note{font-size:.78rem;color:var(--muted2);font-style:italic;padding:0 2rem 1rem;margin-top:-.6rem}
+.modal-img-caption{font-size:.72rem;color:var(--muted2);text-align:center;margin-top:.4rem;letter-spacing:.05em}
+.modal-footer{padding:1.2rem 2rem 1.8rem;display:flex;gap:1rem}
+.modal-link{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);text-decoration:none;font-weight:500;display:inline-flex;align-items:center;gap:.4rem}
+.modal-link:hover{text-decoration:underline}
+
+/* ── ADMIN ── */
+#admin-btn{background:none;border:none;color:var(--muted2);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;font-family:"Inter",sans-serif;opacity:.5;transition:opacity .2s;padding:.2rem .5rem}
+#admin-btn:hover{opacity:1}
+#admin-panel{display:none;position:fixed;inset:0;z-index:900;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:1.5rem}
+#admin-panel.open{display:flex}
+.ap-box{background:#fff;border-radius:10px;max-width:720px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.25);display:flex;flex-direction:column}
+.ap-head{padding:1.4rem 1.8rem;border-bottom:1px solid #e5e3df;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:2}
+.ap-head h3{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:#111}
+.ap-close{background:none;border:none;font-size:1.3rem;color:#888;cursor:pointer;line-height:1}
+.ap-close:hover{color:#111}
+.ap-tabs{display:flex;gap:0;border-bottom:1px solid #e5e3df;padding:0 1.8rem;position:sticky;top:56px;background:#fff;z-index:2}
+.ap-tab{padding:.7rem 1.2rem;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#888;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;font-family:'Inter',sans-serif;font-weight:500}
+.ap-tab.active{color:var(--blue);border-bottom-color:var(--blue)}
+.ap-body{padding:1.6rem 1.8rem;flex:1}
+.ap-section{display:none}.ap-section.active{display:block}
+.ap-label{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:#888;margin-bottom:.4rem;display:block}
+.ap-input{width:100%;border:1.5px solid #dddbd7;border-radius:4px;padding:.7rem .9rem;font-size:.88rem;font-family:'Inter',sans-serif;color:#1a1a1a;outline:none;transition:border-color .2s;margin-bottom:.9rem}
+.ap-input:focus{border-color:var(--blue)}
+.ap-textarea{width:100%;border:1.5px solid #dddbd7;border-radius:4px;padding:.7rem .9rem;font-size:.88rem;font-family:'Inter',sans-serif;color:#1a1a1a;outline:none;resize:vertical;min-height:80px;transition:border-color .2s;margin-bottom:.9rem}
+.ap-textarea:focus{border-color:var(--blue)}
+.ap-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.ap-subtitle{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.9rem;color:#111;margin:.5rem 0 1rem;border-bottom:1px solid #f0eeea;padding-bottom:.5rem}
+.ap-save{background:var(--blue);color:#fff;border:none;border-radius:4px;padding:.7rem 1.6rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-family:'Inter',sans-serif;font-weight:500;cursor:pointer;transition:background .2s}
+.ap-save:hover{background:var(--blue2)}
+.ap-saved{display:inline-block;margin-left:.8rem;font-size:.78rem;color:#1a6b3a;opacity:0;transition:opacity .3s}
+/* carrusel admin */
+.ap-carousel-id{font-size:.72rem;color:#aaa;margin-bottom:.5rem}
+.ap-slides-list{display:flex;flex-direction:column;gap:.5rem;margin-bottom:.8rem}
+.ap-slide-item{display:flex;align-items:center;gap:.7rem;background:#f5f4f0;border-radius:4px;padding:.5rem .7rem;border:1px solid #e5e3df}
+.ap-slide-thumb{width:48px;height:34px;object-fit:cover;border-radius:3px;background:#dddbd7;flex-shrink:0}
+.ap-slide-name{font-size:.78rem;color:#444;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ap-slide-del{background:none;border:none;color:#c00;font-size:1rem;cursor:pointer;padding:0 .2rem;flex-shrink:0;line-height:1}
+.ap-slide-del:hover{color:#800}
+.ap-add-slide{display:flex;align-items:center;gap:.6rem;margin-top:.3rem}
+.ap-file-input{display:none}
+.ap-file-btn{background:none;border:1.5px dashed #aaa;border-radius:4px;padding:.5rem 1rem;font-size:.75rem;color:#666;cursor:pointer;transition:border-color .2s,color .2s;font-family:'Inter',sans-serif}
+.ap-file-btn:hover{border-color:var(--blue);color:var(--blue)}
+.ap-carousel-block{background:#f9f8f6;border:1px solid #e5e3df;border-radius:6px;padding:1rem;margin-bottom:1rem}
+
+.hero-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);margin-bottom:1.2rem;display:block;box-shadow:0 4px 16px rgba(0,82,143,.2)}
+
+.about-photo-row{display:flex;align-items:center;gap:1.2rem;margin-bottom:1.5rem}
+.about-photo{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);flex-shrink:0;box-shadow:0 4px 14px rgba(0,82,143,.18)}
+.about-photo-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:var(--black)}
+.about-photo-role{font-size:.78rem;color:var(--muted);margin-top:.15rem}
+
+.hero-photo-big{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;border-radius:0}
+.hero-photo-col{position:relative;overflow:hidden;min-height:400px;background:var(--blue-light)}
+@media(max-width:900px){.hero-photo-col{min-height:280px;order:-1}}
+
+#logros{background:var(--blue);color:#fff;padding:3rem}
+.logros-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden;margin-top:0}
+.logro-card{background:var(--blue);padding:2rem 1.5rem;text-align:center;transition:background .25s}
+.logro-card:hover{background:var(--blue2)}
+.logro-num{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;color:#fff;line-height:1}
+.logro-label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:.4rem;line-height:1.4}
+@media(max-width:900px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
+
+.wave-divider{width:100%;overflow:hidden;line-height:0;display:block}
+.wave-divider svg{display:block;width:100%}
+.wave-down{margin-bottom:-2px}
+.wave-up{margin-top:-2px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Kevin Szalai</a>
+    <ul class="nav-links">
+      <li><a href="#about">Perfil</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#events">Eventos</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-wrap">
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge"><span></span> Disponible para nuevas oportunidades</div>
+    <h1>Marketing<br><span class="accent">&amp; Publicidad</span><br><span class="stroke">LATAM</span></h1>
+    <p class="hero-sub">Estrategias 360°, fidelización, eventos y campañas de impacto para toda la región.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Hablemos</a>
+    </div>
+  </div>
+  <div>
+    <div class="hero-right">
+      <div class="stat-card featured">
+        <div class="stat-num">360°</div>
+        <div class="stat-label">Visión estratégica</div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label">Países activos</div></div>
+        <div class="stat-card"><div class="stat-num" style="animation:blink 2.5s ease-in-out infinite">∞</div><div class="stat-label">Ferias intl.</div></div>
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Prog. fidelización</div></div>
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Herram. digitales</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tray">
+  <span class="tray-label">Trayectoria en</span>
+  <span class="tray-item">Universal Assistance</span>
+  <span class="tray-dot">·</span>
+  <span class="tray-item">PedidosYa</span>
+  <span class="tray-dot">·</span>
+  <span class="tray-item">OpenDev Pro</span>
+</div>
+
+<div class="page-wrap">
+
+<section id="about">
+  <div class="sec-eyebrow reveal">01 — Perfil</div>
+  <h2 class="reveal reveal-delay-1">Quién soy</h2>
+  <div class="about-grid reveal reveal-delay-2">
+    <div class="about-text">
+      <div class="about-photo-row">
+        <img src="kevin-foto.jpg" alt="Kevin Szalai" class="about-photo">
+        <div>
+          <div class="about-photo-name">Kevin Szalai</div>
+          <div class="about-photo-role">Marketing &amp; Publicidad · LATAM</div>
+        </div>
+      </div>
+      <p>Profesional de Marketing y Publicidad especializado en <strong>estrategias regionales para LATAM</strong>. Con background emprendedor y experiencia corporativa en Universal Assistance (Grupo Zurich), donde lidero fidelización, campañas multicanal, eventos de gran escala y lanzamiento de productos — desde el naming hasta la ejecución creativa.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Marketing Regional 360°</span><span class="skill-tag">Campañas de Incentivos</span>
+        <span class="skill-tag">Gestión de Eventos</span><span class="skill-tag">Fidelización</span>
+        <span class="skill-tag">KPIs &amp; Data Analysis</span><span class="skill-tag">CRM</span>
+        <span class="skill-tag">E-commerce &amp; UX</span><span class="skill-tag">Power BI</span>
+        <span class="skill-tag">IA Aplicada</span><span class="skill-tag">Alianzas Estratégicas</span>
+        <span class="skill-tag">Branding</span><span class="skill-tag">Adobe CC</span>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-item"><div class="info-label">Base</div><div class="info-val">Buenos Aires, Argentina</div></div>
+      <div class="info-item"><div class="info-label">Disponibilidad</div><div class="info-val">Abierto a oportunidades en cualquier mercado</div></div>
+      <div class="info-item"><div class="info-label">Mercados</div><div class="info-val">Argentina · Colombia · Chile · México y más</div></div>
+      <div class="info-item"><div class="info-label">Educación</div><div class="info-val">Téc. Superior Comunicación y Marketing Digital · ISEC<br>Téc. en Comercialización · U. de Belgrano</div></div>
+      <div class="info-item"><div class="info-label">Certificaciones</div><div class="info-val">IA Aplicada · Power BI · UX</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="sec-eyebrow reveal">02 — Trayectoria</div>
+  <h2 class="reveal reveal-delay-1">Experiencia</h2>
+  <div class="timeline reveal reveal-delay-2">
+    <div class="titem">
+      <div class="t-period">2022 — Actualidad</div>
+      <div class="t-role">Analista Sr. de Publicidad Regional</div>
+      <div class="t-company">Universal Assistance · Grupo Zurich</div>
+      <ul class="t-bullets">
+        <li>Campañas de incentivos para canales Retail, Affinity y cuentas corporativas en LATAM.</li>
+        <li>Presencia de marca en ferias internacionales: FIT, ANATO, ABAV, FAEVYT y más.</li>
+        <li>Liderazgo de programas de fidelización: Rewards, Relajab y Pasión Universal.</li>
+        <li>Gestión de identidad de marca y relación con agencias y proveedores regionales.</li>
+        <li>Desarrollo de herramientas digitales para autonomía de equipos comerciales.</li>
+        <li>Producción de comunicaciones y lanzamiento de productos — naming, estrategia y ejecución creativa.</li>
+      </ul>
+    </div>
+    <div class="titem">
+      <div class="t-period">2016 — 2022</div>
+      <div class="t-role">Fundador &amp; Director</div>
+      <div class="t-company">Yes Chic! · Emprendimiento personal</div>
+      <ul class="t-bullets">
+        <li>Gestión integral: tendencias, proveedores, venta directa y canales digitales.</li>
+        <li>Eventos de fidelización y showrooms exclusivos.</li>
+        <li>Supervisión de KPIs y análisis de resultados.</li>
+      </ul>
+    </div>
+    <div class="titem">
+      <div class="t-period">2016 — 2017</div>
+      <div class="t-role">Business Development Manager</div>
+      <div class="t-company">OpenDev Pro</div>
+      <ul class="t-bullets">
+        <li>Alianzas estratégicas y eventos con partners para captación de clientes.</li>
+        <li>Acciones de marketing para fortalecer visibilidad en el mercado.</li>
+      </ul>
+    </div>
+    <div class="titem">
+      <div class="t-period">2015 — 2016</div>
+      <div class="t-role">Account Manager</div>
+      <div class="t-company">PedidosYa</div>
+      <ul class="t-bullets">
+        <li>Apertura de plazas comerciales y expansión de cobertura.</li>
+        <li>Trade marketing y captación de partners mediante activaciones.</li>
+      </ul>
+    </div>
+  </div>
+  <a href="https://ar.linkedin.com/in/kevinszalai" target="_blank" rel="noopener" class="btn btn-primary reveal" style="margin-top:2rem">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+    LinkedIn
+  </a>
+</section>
+
+
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,60 C300,0 900,0 1200,60 L1200,0 L0,0 Z" fill="#00528F"/></svg></div>
+<section id="logros">
+  <div class="logros-grid">
+    <div class="logro-card">
+      <div class="logro-num">45</div>
+      <div class="logro-label">Años de UA<br>acompañados</div>
+    </div>
+    <div class="logro-card">
+      <div class="logro-num">10+</div>
+      <div class="logro-label">Ferias internacionales<br>coordinadas</div>
+    </div>
+    <div class="logro-card">
+      <div class="logro-num">3</div>
+      <div class="logro-label">Programas de<br>fidelización liderados</div>
+    </div>
+    <div class="logro-card">
+      <div class="logro-num">5</div>
+      <div class="logro-label">Mercados activos<br>en LATAM</div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" fill="#ffffff"/></svg></div>
+<section id="events">
+  <div class="sec-eyebrow reveal">03 — En el campo</div>
+  <h2 class="reveal reveal-delay-1">Eventos &amp; Campañas</h2>
+  <p class="events-lead reveal reveal-delay-2">Momentos reales: stands, sponsorships, activaciones y campañas regionales que muestran cómo se ve la estrategia cuando se ejecuta.</p>
+
+  <!-- CARRUSEL PRINCIPAL: La marca se movió con nosotros -->
+  <div class="ev-principal reveal reveal-delay-2">
+    <div class="ecard hero-ev carousel-card split">
+      <div class="hero-ev-media">
+        <div class="carousel-wrapper"><div class="carousel-track" id="c0-track">
+          <div class="carousel-slide"><img src="agenda-1.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-2.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-9.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-3.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-4.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-10.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-5.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-6.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-7.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-8.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+        </div></div>
+        <div class="carousel-dots" id="c0-dots">
+          <button class="cdot active" onclick="goTo('c0',0)"></button>
+          <button class="cdot" onclick="goTo('c0',1)"></button>
+          <button class="cdot" onclick="goTo('c0',2)"></button>
+          <button class="cdot" onclick="goTo('c0',3)"></button>
+          <button class="cdot" onclick="goTo('c0',4)"></button>
+          <button class="cdot" onclick="goTo('c0',5)"></button>
+          <button class="cdot" onclick="goTo('c0',6)"></button>
+          <button class="cdot" onclick="goTo('c0',7)"></button>
+          <button class="cdot" onclick="goTo('c0',8)"></button>
+          <button class="cdot" onclick="goTo('c0',9)"></button>
+        </div>
+        <button class="carousel-btn prev" onclick="move('c0',-1)" style="top:210px">‹</button>
+        <button class="carousel-btn next" onclick="move('c0',1)" style="top:210px">›</button>
+      </div>
+      <div class="hero-ev-content">
+        <div class="ev-tag">Agenda Regional · 2025</div>
+        <div class="ev-title" style="font-size:1.2rem;margin-bottom:1rem">La marca se movió con nosotros</div>
+        <div class="ev-desc">Agenda regional intensa con stands institucionales, workshops y activaciones propias.</div>
+        <div class="ev-hls">
+          <div class="ev-hl">ECTU, 100% Seguros, Foro AAPAS y Congreso Regional con stands institucionales.</div>
+          <div class="ev-hl">Jornadas de RCP en Córdoba, Rosario, Mendoza y CABA con partners estratégicos.</div>
+          <div class="ev-hl">Espacio VIP desde cero en Congreso FAEVYT (Paraná) — con ambulancia y equipo médico propio.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILA DE 3: FIT | Campaña | Chile Rugby -->
+  <div class="ev-fila3 reveal reveal-delay-3">
+
+    <div class="ecard carousel-card">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c1-track">
+        <div class="carousel-slide"><img src="fit-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+      </div></div>
+      <div class="carousel-dots" id="c1-dots">
+        <button class="cdot active" onclick="goTo('c1',0)"></button>
+        <button class="cdot" onclick="goTo('c1',1)"></button>
+        <button class="cdot" onclick="goTo('c1',2)"></button>
+      </div>
+      <button class="carousel-btn prev" onclick="move('c1',-1)">‹</button>
+      <button class="carousel-btn next" onclick="move('c1',1)">›</button>
+      <div class="ev-tag">Feria Internacional · Turismo</div>
+      <div class="ev-title">FIT 2025 — 45 años de la marca</div>
+      <div class="ev-desc">Stand renovado en la feria de turismo más importante de la región. Edición especial por los 45 años de Universal Assistance.</div>
+    </div>
+
+    <div class="ecard carousel-card">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c2-track">
+        <div class="carousel-slide"><img src="campana-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-4.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-5.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+      </div></div>
+      <div class="carousel-dots" id="c2-dots">
+        <button class="cdot active" onclick="goTo('c2',0)"></button>
+        <button class="cdot" onclick="goTo('c2',1)"></button>
+        <button class="cdot" onclick="goTo('c2',2)"></button>
+        <button class="cdot" onclick="goTo('c2',3)"></button>
+        <button class="cdot" onclick="goTo('c2',4)"></button>
+      </div>
+      <button class="carousel-btn prev" onclick="move('c2',-1)">‹</button>
+      <button class="carousel-btn next" onclick="move('c2',1)">›</button>
+      <div class="ev-tag">Campaña Regional</div>
+      <div class="ev-title">Campaña "Te cuesta $0"</div>
+      <div class="ev-desc">Campaña regional con rodaje propio y activación interna. Del set de filmación a toda la región.</div>
+    </div>
+
+    <div class="ecard carousel-card">
+      <div class="carousel-wrapper"><div class="carousel-track" id="c3-track">
+        <div class="carousel-slide"><img src="chile-rugby-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-4.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+      </div></div>
+      <div class="carousel-dots" id="c3-dots">
+        <button class="cdot active" onclick="goTo('c3',0)"></button>
+        <button class="cdot" onclick="goTo('c3',1)"></button>
+        <button class="cdot" onclick="goTo('c3',2)"></button>
+        <button class="cdot" onclick="goTo('c3',3)"></button>
+      </div>
+      <button class="carousel-btn prev" onclick="move('c3',-1)">‹</button>
+      <button class="carousel-btn next" onclick="move('c3',1)">›</button>
+      <div class="ev-tag">Sponsorship · Rugby · LATAM</div>
+      <div class="ev-title">Chile Rugby &amp; equipos de la región</div>
+      <div class="ev-desc">Sponsor oficial de Chile Rugby — Los Cóndores en el Mundial Francia 2023 — y de otros equipos de rugby de la región. El logo de UA en la camiseta.</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,60 C300,0 900,0 1200,60 L1200,0 L0,0 Z" fill="#edecea"/></svg></div>
+<section id="projects">
+  <div class="sec-eyebrow reveal">04 — Herramientas digitales</div>
+  <h2 class="reveal reveal-delay-1">Proyectos</h2>
+  <p class="proj-intro reveal reveal-delay-2">Plataformas propias, desarrolladas para dar autonomía a los equipos comerciales de la región, permitiéndoles resolver necesidades del día a día sin depender de procesos intermedios.</p>
+  <div class="proj-grid-top reveal reveal-delay-2">
+    <div class="proj-card" onclick="openModal('tarjetas')" style="cursor:pointer">
+      <div class="proj-tag">Ventas · Digital</div>
+      <div class="proj-num">01</div>
+      <div class="proj-title">Tarjetas Virtuales con QR</div>
+      <div class="proj-desc">Generador de tarjetas de presentación digitales con QR, para compartir contacto al instante en eventos y ferias.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+    <div class="proj-card" onclick="openModal('cobranding')" style="cursor:pointer">
+      <div class="proj-tag">Branding · Herramienta</div>
+      <div class="proj-num">02</div>
+      <div class="proj-title">Compositor de Cobranding</div>
+      <div class="proj-desc">Plataforma para que cada país arme piezas cobrandeadas con partners locales, sin depender de diseño.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+  </div>
+  <div class="proj-grid-bot reveal reveal-delay-3">
+    <div class="proj-card" onclick="openModal('perfiles')" style="cursor:pointer">
+      <div class="proj-tag">Comercial · UX</div>
+      <div class="proj-num">03</div>
+      <div class="proj-title">Perfiles de Cobertura</div>
+      <div class="proj-desc">Herramienta interna que eliminó el proceso manual de armado de perfiles. El equipo comercial genera PDFs con marca institucional en minutos.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+    <div class="proj-card" onclick="openModal('promos')" style="cursor:pointer">
+      <div class="proj-tag">Comercial · Marketing</div>
+      <div class="proj-num">04</div>
+      <div class="proj-title">Piezas para Promociones</div>
+      <div class="proj-desc">Editor de flyers promocionales sobre plantillas aprobadas, con flujo de revisión antes de publicar.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+    <div class="proj-card" onclick="openModal('invitaciones')" style="cursor:pointer">
+      <div class="proj-tag">Eventos · Digital</div>
+      <div class="proj-num">05</div>
+      <div class="proj-title">Editor de Invitaciones</div>
+      <div class="proj-desc">Editor visual para armar invitaciones a eventos en formato Story o Email, con QR de inscripción.</div>
+      <div class="proj-link">Ver proyecto</div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" fill="#ffffff"/></svg></div>
+<section id="contact">
+  <div class="sec-eyebrow reveal">05 — Contacto</div>
+  <h2 class="reveal reveal-delay-1">Hablemos</h2>
+  <div class="contact-grid reveal reveal-delay-2">
+    <div>
+      <h3 class="contact-hl">¿Buscás un perfil <span class="accent">regional</span> con visión integral?</h3>
+      <p class="contact-sub">Abierto a oportunidades en marketing y publicidad — cualquier mercado.</p>
+      <a href="https://ar.linkedin.com/in/kevinszalai" target="_blank" rel="noopener" class="li-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div>
+      <form class="contact-form" action="https://formspree.io/f/mkoevpkv" method="POST" id="contact-form">
+        <div class="form-row">
+          <div class="form-field"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre" required></div>
+          <div class="form-field"><label>Email</label><input type="email" name="email" placeholder="tu@email.com" required></div>
+        </div>
+        <div class="form-field"><label>Empresa / Organización</label><input type="text" name="empresa" placeholder="Opcional"></div>
+        <div class="form-field"><label>Mensaje</label><textarea name="mensaje" rows="4" placeholder="Contame de qué se trata..." required></textarea></div>
+        <button type="submit" class="form-submit">Enviar mensaje</button>
+        <div class="form-success" id="form-success">¡Gracias por escribirme! Me voy a poner en contacto a la brevedad.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <span class="footer-copy">© 2026 Kevin Szalai · Buenos Aires, Argentina</span>
+  <span class="footer-name">Marketing &amp; Publicidad LATAM</span>
+  <button id="admin-btn" onclick="openAdmin()">Admin</button>
+</footer>
+
+<script>
+// REVEAL
+const reveals=document.querySelectorAll('.reveal');
+const revealObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}});},{threshold:.1});
+reveals.forEach(el=>revealObs.observe(el));
+
+// COUNTERS
+const statNums=document.querySelectorAll('.stat-num');
+const targets={'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'3':{val:3,suffix:''},'∞':{val:null}};
+function animCount(el,target,suffix,dur){let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*target)+suffix;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);}
+function animInf(el,dur){el.style.opacity='0';el.style.transform='scale(0.4)';let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.style.opacity=e;el.style.transform='scale('+(0.4+e*0.6)+')';if(p<1)requestAnimationFrame(step);else{el.style.opacity='1';el.style.transform='scale(1)'}};requestAnimationFrame(step);}
+const numObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;const t=targets[el.textContent.trim()];if(t){if(t.val===null)animInf(el,900);else animCount(el,t.val,t.suffix,900);numObs.unobserve(el);}});},{threshold:.5});
+statNums.forEach(el=>numObs.observe(el));
+
+// CAROUSEL
+const carousels={};
+function initCarousel(id){
+  const track=document.getElementById(id+'-track');
+  if(!track)return;
+  const slides=Array.from(track.querySelectorAll('.carousel-slide'));
+  const total=slides.length;
+  const realSlides=slides.filter(s=>s.querySelector('img')).length;
+  const showControls=realSlides>1;
+
+  // Clonar primer y último slide para loop infinito
+  if(total>1){
+    const firstClone=slides[0].cloneNode(true);
+    const lastClone=slides[total-1].cloneNode(true);
+    firstClone.classList.add('clone');
+    lastClone.classList.add('clone');
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone,slides[0]);
+  }
+
+  const allSlides=()=>track.querySelectorAll('.carousel-slide');
+  const startIdx=total>1?1:0; // empezar en 1 porque hay un clone al inicio
+  carousels[id]={current:startIdx,total,realTotal:total};
+  track.style.transform='translateX(-'+startIdx*100+'%)';
+  track.style.transition='transform .4s cubic-bezier(.4,0,.2,1)';
+
+  const card=track.closest('.carousel-card');
+  const dots=document.getElementById(id+'-dots');
+  if(dots)dots.style.display=showControls?'flex':'none';
+  if(card)card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display=showControls?'flex':'none');
+
+  // Al terminar la transición, saltar sin animación si estamos en clone
+  track.addEventListener('transitionend',()=>{
+    const c=carousels[id];
+    if(c.current>=c.realTotal+1){
+      track.style.transition='none';
+      c.current=1;
+      track.style.transform='translateX(-'+c.current*100+'%)';
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{track.style.transition='transform .4s cubic-bezier(.4,0,.2,1)';}));
+    }
+    if(c.current<=0){
+      track.style.transition='none';
+      c.current=c.realTotal;
+      track.style.transform='translateX(-'+c.current*100+'%)';
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{track.style.transition='transform .4s cubic-bezier(.4,0,.2,1)';}));
+    }
+    // Actualizar dots con índice real
+    const dotIdx=(c.current-1+c.realTotal)%c.realTotal;
+    const dotsEl=document.getElementById(id+'-dots');
+    if(dotsEl)dotsEl.querySelectorAll('.cdot').forEach((d,i)=>d.classList.toggle('active',i===dotIdx));
+  });
+
+  let startX=0;
+  track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
+  track.addEventListener('touchend',e=>{const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40&&total>1)move(id,diff>0?1:-1);},{passive:true});
+}
+document.addEventListener('DOMContentLoaded',()=>['c0','c1','c2','c3'].forEach(initCarousel));
+// Autoplay global sincronizado
+const AUTOPLAY_DELAY = 3500;
+let globalTick = null;
+let pausedIds = new Set();
+
+function startGlobalAutoplay() {
+  if(globalTick) clearInterval(globalTick);
+  globalTick = setInterval(() => {
+    ['c0','c1','c2','c3'].forEach(id => {
+      if(!pausedIds.has(id)) {
+        const c = carousels[id];
+        if(c && c.realTotal > 1) move(id, 1);
+      }
+    });
+  }, AUTOPLAY_DELAY);
+}
+
+function pauseCarousel(id) {
+  pausedIds.add(id);
+}
+
+function resumeCarousel(id) {
+  pausedIds.delete(id);
+  // Si todos están despaused, no hace falta reiniciar el intervalo global
+}
+
+function initAutoplay(id) {
+  const track = document.getElementById(id+'-track');
+  if(!track) return;
+  const card = track.closest('.carousel-card') || track.closest('.ecard');
+  if(!card) return;
+  card.addEventListener('mouseenter', () => pauseCarousel(id));
+  card.addEventListener('mouseleave', () => resumeCarousel(id));
+  card.addEventListener('touchstart', () => pauseCarousel(id), {passive:true});
+  card.addEventListener('touchend', () => setTimeout(() => resumeCarousel(id), 1500), {passive:true});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  ['c0','c1','c2','c3'].forEach(id => {
+    const c = carousels[id];
+    if(c && c.realTotal > 1) initAutoplay(id);
+  });
+  startGlobalAutoplay();
+});
+
+function goTo(id,idx){
+  const c=carousels[id];if(!c)return;
+  c.current=idx;
+  const track=document.getElementById(id+'-track');
+  if(track)track.style.transform='translateX(-'+idx*100+'%)';
+  const dotIdx=(idx-1+c.realTotal)%c.realTotal;
+  document.querySelectorAll('#'+id+'-dots .cdot').forEach((d,i)=>d.classList.toggle('active',i===dotIdx));
+}
+function move(id,dir){
+  const c=carousels[id];if(!c)return;
+  goTo(id,c.current+dir);
+}
+
+// FORM
+const form=document.getElementById('contact-form');
+if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=form.querySelector('.form-submit');btn.textContent='Enviando...';btn.disabled=true;try{const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(res.ok){form.reset();document.getElementById('form-success').style.display='block';btn.textContent='Enviado ✓';}else{btn.textContent='Error, intentá de nuevo';btn.disabled=false;}}catch{btn.textContent='Error, intentá de nuevo';btn.disabled=false;}});}
+</script>
+
+<div class="modal-overlay" id="modal-tarjetas" onclick="closeModalOutside(event,'tarjetas')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Ventas · Digital · Herramienta interna</div>
+        <div class="modal-title">Tarjetas Virtuales con QR</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('tarjetas')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Diseñé y desarrollé esta herramienta para que cada comercial arme su propia tarjeta de presentación digital — con foto, datos de contacto y un código QR que carga el contacto directo al celular de quien la escanea. Pensada para eventos y ferias, donde compartir datos rápido y sin depender de tarjetas de papel hace la diferencia. Exporta en alta resolución, lista para compartir por WhatsApp o LinkedIn.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#003d6b"/>
+          <rect x="30" y="35" width="210" height="180" rx="16" fill="#ffffff" opacity="0.06"/>
+          <rect x="30" y="35" width="210" height="180" rx="16" fill="none" stroke="#00C4DF" stroke-width="1.5"/>
+          <circle cx="85" cy="90" r="26" fill="url(#g1)"/>
+          <rect x="30" y="140" width="140" height="11" rx="5" fill="#ffffff" opacity="0.9"/>
+          <rect x="30" y="160" width="105" height="9" rx="4" fill="#00C4DF"/>
+          <rect x="30" y="184" width="160" height="7" rx="3" fill="#ffffff" opacity="0.35"/>
+          <rect x="30" y="198" width="120" height="7" rx="3" fill="#ffffff" opacity="0.35"/>
+          <g transform="translate(272,68)">
+            <rect width="100" height="100" rx="10" fill="#ffffff"/>
+            <g fill="#003d6b">
+              <rect x="8" y="8" width="15" height="15"/><rect x="30" y="8" width="8" height="8"/><rect x="48" y="8" width="8" height="15"/><rect x="68" y="8" width="15" height="15"/>
+              <rect x="8" y="30" width="8" height="8"/><rect x="30" y="30" width="8" height="8"/><rect x="68" y="30" width="8" height="8"/>
+              <rect x="8" y="48" width="15" height="8"/><rect x="48" y="48" width="8" height="15"/><rect x="68" y="48" width="15" height="8"/>
+              <rect x="8" y="68" width="15" height="15"/><rect x="30" y="68" width="8" height="8"/><rect x="48" y="68" width="8" height="8"/><rect x="68" y="68" width="15" height="15"/>
+            </g>
+          </g>
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00C4DF"/><stop offset="1" stop-color="#00528F"/></linearGradient></defs>
+        </svg></div>
+        <div class="modal-img-caption">Tarjeta digital con foto, datos y QR de contacto directo</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/tarjetaqr/" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cobranding" onclick="closeModalOutside(event,'cobranding')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Branding · Multi-país · Herramienta interna</div>
+        <div class="modal-title">Compositor de Cobranding</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('cobranding')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Desarrollé esta plataforma para resolver un cuello de botella real: cada vez que se cerraba una alianza con un partner local, armar la pieza con los dos logos bien puestos dependía de pedirlo a diseño. Con esta herramienta, cada país genera su propia pieza con acceso restringido por mercado, detección automática cuando hay dos logos, y fechas de vencimiento configuradas para que ninguna pieza vieja siga circulando.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#008091"/>
+          <rect x="35" y="60" width="140" height="130" rx="14" fill="#ffffff"/>
+          <circle cx="105" cy="115" r="24" fill="#00528F"/>
+          <rect x="65" y="155" width="80" height="9" rx="4" fill="#00528F" opacity="0.5"/>
+          <circle cx="200" cy="125" r="18" fill="#003d6b"/>
+          <text x="200" y="132" font-family="Arial" font-size="20" fill="#fff" text-anchor="middle" font-weight="700">+</text>
+          <rect x="225" y="60" width="140" height="130" rx="14" fill="#ffffff"/>
+          <rect x="253" y="95" width="82" height="30" rx="6" fill="#00C4DF"/>
+          <rect x="253" y="155" width="82" height="9" rx="4" fill="#00528F" opacity="0.5"/>
+          <g transform="translate(35,205)">
+            <rect width="28" height="18" rx="3" fill="#ffffff" opacity="0.9"/>
+            <rect x="34" width="28" height="18" rx="3" fill="#ffffff" opacity="0.55"/>
+            <rect x="68" width="28" height="18" rx="3" fill="#ffffff" opacity="0.9"/>
+            <rect x="102" width="28" height="18" rx="3" fill="#ffffff" opacity="0.55"/>
+            <rect x="136" width="28" height="18" rx="3" fill="#ffffff" opacity="0.9"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Composición de dos marcas con detección automática de layout</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/compositor/index.html" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-perfiles" onclick="closeModalOutside(event,'perfiles')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Comercial · UX · Herramienta interna</div>
+        <div class="modal-title">Generador de Perfiles de Cobertura</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('perfiles')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Herramienta web interna que eliminó el proceso manual de armado de perfiles de cobertura. El equipo comercial genera PDFs con marca institucional en minutos, con login corporativo por OTP. El contenido de cobertura lo carga y mantiene marketing/producto — el comercial solo completa datos y descarga, sin depender del equipo de diseño. Todo en un único archivo HTML.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#00528F"/>
+          <rect x="120" y="25" width="160" height="200" rx="10" fill="#ffffff"/>
+          <rect x="138" y="48" width="70" height="11" rx="5" fill="#003d6b"/>
+          <rect x="138" y="70" width="120" height="6" rx="3" fill="#00528F" opacity="0.4"/>
+          <rect x="138" y="82" width="120" height="6" rx="3" fill="#00528F" opacity="0.4"/>
+          <g fill="#008091">
+            <circle cx="146" cy="112" r="6"/><rect x="158" y="109" width="98" height="6" rx="3" opacity="0.7"/>
+            <circle cx="146" cy="134" r="6"/><rect x="158" y="131" width="98" height="6" rx="3" opacity="0.7"/>
+            <circle cx="146" cy="156" r="6"/><rect x="158" y="153" width="68" height="6" rx="3" opacity="0.7"/>
+          </g>
+          <rect x="138" y="185" width="120" height="26" rx="6" fill="#00C4DF"/>
+          <text x="198" y="202" font-family="Arial" font-size="11" fill="#003d6b" text-anchor="middle" font-weight="700">DESCARGAR PDF</text>
+          <g transform="translate(60,120)">
+            <circle r="28" fill="#003d6b" stroke="#00C4DF" stroke-width="2"/>
+            <rect x="-9" y="-4" width="18" height="14" rx="2" fill="none" stroke="#fff" stroke-width="1.6"/>
+            <path d="M-6,-4 v-5 a6 6 0 0 1 12 0 v5" fill="none" stroke="#fff" stroke-width="1.6"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Acceso con login corporativo y generación de PDF en un paso</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/generadorperfil/" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-promos" onclick="closeModalOutside(event,'promos')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Comercial · Marketing · Herramienta interna</div>
+        <div class="modal-title">Generador de Piezas para Promociones</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('promos')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Construí este editor para que el equipo comercial cargue el descuento y la financiación de su campaña puntual sobre una plantilla ya aprobada, sin tocar el arte base. Cada pieza pasa por un flujo de aprobación antes de salir a la calle, así ninguna promoción incorrecta llega a circular. Corre sobre plantillas SVG con capas bloqueables y un catálogo configurable.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#00C4DF"/>
+          <rect x="30" y="25" width="340" height="200" rx="14" fill="#003d6b"/>
+          <text x="200" y="140" font-family="Arial" font-size="70" fill="#ffffff" text-anchor="middle" font-weight="700">40%</text>
+          <rect x="105" y="175" width="190" height="20" rx="10" fill="#00528F"/>
+          <text x="200" y="189" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">6 CUOTAS SIN INTERÉS</text>
+          <g transform="translate(310,45)">
+            <rect width="34" height="34" rx="8" fill="#008091"/>
+            <path d="M17 11a4.5 4.5 0 0 0-4.5 4.5v2.5h9v-2.5a4.5 4.5 0 0 0-4.5-4.5z" fill="none" stroke="#fff" stroke-width="1.7"/>
+            <rect x="10" y="18" width="14" height="10" rx="2" fill="#fff"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Pieza generada a partir de una plantilla aprobada, con capas protegidas</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    <div class="modal-footer">
+      <a href="https://kevinszalai.github.io/ua-promo-platform-/index.html" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-invitaciones" onclick="closeModalOutside(event,'invitaciones')">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div>
+        <div class="modal-tag">Eventos · Digital · Herramienta interna</div>
+        <div class="modal-title">Editor de Invitaciones</div>
+      </div>
+      <button class="modal-close" onclick="closeModal('invitaciones')">✕</button>
+    </div>
+    <div class="modal-desc">
+      Diseñé un editor sobre Canvas para armar la invitación a un evento en minutos, en formato Story para redes o Email, con QR de inscripción incluido. La paleta y las posiciones editables quedan acotadas desde un panel de administración, para que la pieza final nunca se salga de marca.
+    </div>
+    <div class="modal-imgs">
+      <div>
+        <div class="modal-mockup"><svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="250" fill="#00528F"/>
+          <rect x="150" y="18" width="130" height="214" rx="16" fill="#003d6b"/>
+          <rect x="150" y="18" width="130" height="214" rx="16" fill="none" stroke="#00C4DF" stroke-width="1.5"/>
+          <rect x="168" y="45" width="94" height="9" rx="4" fill="#00C4DF"/>
+          <rect x="168" y="68" width="70" height="16" rx="4" fill="#ffffff"/>
+          <rect x="168" y="96" width="94" height="7" rx="3" fill="#ffffff" opacity="0.5"/>
+          <rect x="168" y="110" width="70" height="7" rx="3" fill="#ffffff" opacity="0.5"/>
+          <rect x="190" y="165" width="50" height="50" rx="6" fill="#ffffff"/>
+          <g transform="translate(45,80)">
+            <rect width="86" height="60" rx="10" fill="#ffffff" opacity="0.95"/>
+            <rect x="12" y="14" width="50" height="7" rx="3" fill="#003d6b"/>
+            <rect x="12" y="28" width="62" height="5" rx="2.5" fill="#00528F" opacity="0.6"/>
+            <rect x="12" y="40" width="40" height="5" rx="2.5" fill="#00528F" opacity="0.6"/>
+          </g>
+        </svg></div>
+        <div class="modal-img-caption">Invitación en formato Story, con QR de inscripción</div>
+      </div>
+    </div>
+    <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
+    
+  </div>
+</div>
+
+<script>
+function openModal(id){document.getElementById('modal-'+id).classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.style.overflow='';}
+function closeModalOutside(e,id){if(e.target===document.getElementById('modal-'+id))closeModal(id);}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelectorAll('.modal-overlay.open').forEach(m=>m.classList.remove('open'));document.body.style.overflow='';}});
+</script>
+
+<!-- ADMIN BTN -->
+
+
+<!-- ADMIN PANEL -->
+<div id="admin-panel" onclick="closeAdminOutside(event)">
+<div class="ap-box">
+  <div class="ap-head">
+    <h3>Panel de administración</h3>
+    <button class="ap-close" onclick="closeAdmin()">✕</button>
+  </div>
+  <div class="ap-tabs">
+    <button class="ap-tab active" onclick="apTab('textos')">Textos</button>
+    <button class="ap-tab" onclick="apTab('carruseles')">Carruseles</button>
+  </div>
+  <div class="ap-body">
+
+    <!-- TAB TEXTOS -->
+    <div class="ap-section active" id="ap-textos">
+      <div class="ap-subtitle">Hero</div>
+      <label class="ap-label">Subtítulo (hero)</label>
+      <input class="ap-input" id="ap-hero-sub" placeholder="Estrategias 360°...">
+
+      <div class="ap-subtitle">Perfil</div>
+      <label class="ap-label">Texto "Quién soy"</label>
+      <textarea class="ap-textarea" id="ap-about-text" rows="4"></textarea>
+
+      <div class="ap-subtitle">Eventos — Card principal</div>
+      <div class="ap-row">
+        <div>
+          <label class="ap-label">Tag</label>
+          <input class="ap-input" id="ap-ev0-tag" placeholder="Agenda Regional · 2025">
+        </div>
+        <div>
+          <label class="ap-label">Título</label>
+          <input class="ap-input" id="ap-ev0-title" placeholder="La marca se movió...">
+        </div>
+      </div>
+      <label class="ap-label">Descripción</label>
+      <textarea class="ap-textarea" id="ap-ev0-desc" rows="2"></textarea>
+
+      <div class="ap-subtitle">Eventos — FIT 2025</div>
+      <label class="ap-label">Título</label>
+      <input class="ap-input" id="ap-ev1-title" placeholder="FIT 2025...">
+      <label class="ap-label">Descripción</label>
+      <textarea class="ap-textarea" id="ap-ev1-desc" rows="2"></textarea>
+
+      <div class="ap-subtitle">Eventos — Campaña</div>
+      <label class="ap-label">Título</label>
+      <input class="ap-input" id="ap-ev2-title" placeholder='Campaña "Te cuesta $0"'>
+      <label class="ap-label">Descripción</label>
+      <textarea class="ap-textarea" id="ap-ev2-desc" rows="2"></textarea>
+
+      <div class="ap-subtitle">Eventos — Chile Rugby</div>
+      <label class="ap-label">Título</label>
+      <input class="ap-input" id="ap-ev3-title" placeholder="Sponsor oficial Chile Rugby">
+      <label class="ap-label">Descripción</label>
+      <textarea class="ap-textarea" id="ap-ev3-desc" rows="2"></textarea>
+
+      <button class="ap-save" onclick="apSaveTextos()">Guardar cambios</button>
+      <span class="ap-saved" id="ap-saved-textos">✓ Guardado</span>
+    </div>
+
+    <!-- TAB CARRUSELES -->
+    <div class="ap-section" id="ap-carruseles">
+      <p style="font-size:.82rem;color:#888;margin-bottom:1.2rem">Agregá o eliminá fotos de cada carrusel. Los botones de navegación aparecen o desaparecen automáticamente según la cantidad de imágenes.</p>
+
+      <div id="ap-carruseles-list"></div>
+
+      <button class="ap-save" onclick="apSaveCarruseles()">Aplicar cambios</button>
+      <span class="ap-saved" id="ap-saved-carruseles">✓ Aplicado</span>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<script>
+// ── ADMIN STATE ──
+const ADMIN_PIN = '4896';
+let adminUnlocked = false;
+
+function openAdmin(){
+  if(!adminUnlocked){
+    const pin = prompt('PIN de administrador:');
+    if(pin !== ADMIN_PIN){ alert('PIN incorrecto'); return; }
+    adminUnlocked = true;
+  }
+  loadAdminValues();
+  buildCarruselList();
+  document.getElementById('admin-panel').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeAdmin(){document.getElementById('admin-panel').classList.remove('open');document.body.style.overflow='';}
+function closeAdminOutside(e){if(e.target===document.getElementById('admin-panel'))closeAdmin();}
+function apTab(name){
+  document.querySelectorAll('.ap-tab').forEach((t,i)=>{t.classList.toggle('active', t.getAttribute('onclick').includes("'"+name+"'"))});
+  document.querySelectorAll('.ap-section').forEach(s=>s.classList.remove('active'));
+  document.getElementById('ap-'+name).classList.add('active');
+}
+
+// ── LOAD VALUES ──
+function loadAdminValues(){
+  const hs = document.querySelector('.hero-sub'); if(hs) document.getElementById('ap-hero-sub').value = hs.textContent.trim();
+  const at = document.querySelector('#about .about-text p'); if(at) document.getElementById('ap-about-text').value = at.innerText;
+
+  const evCards = [
+    {tag:'ap-ev0-tag',title:'ap-ev0-title',desc:'ap-ev0-desc', sel:'.hero-ev-content'},
+    {title:'ap-ev1-title',desc:'ap-ev1-desc', sel:'#c1-track'},
+    {title:'ap-ev2-title',desc:'ap-ev2-desc', sel:'#c2-track'},
+    {title:'ap-ev3-title',desc:'ap-ev3-desc', sel:'#c3-track'},
+  ];
+  // ev0 — card principal
+  const hec = document.querySelector('.hero-ev-content');
+  if(hec){
+    const tag = hec.querySelector('.ev-tag'); if(tag) document.getElementById('ap-ev0-tag').value = tag.textContent.trim();
+    const tit = hec.querySelector('.ev-title'); if(tit) document.getElementById('ap-ev0-title').value = tit.textContent.trim();
+    const dsc = hec.querySelector('.ev-desc'); if(dsc) document.getElementById('ap-ev0-desc').value = dsc.textContent.trim();
+  }
+  // ev1,2,3 — fila de 3
+  [[1,'c1'],[2,'c2'],[3,'c3']].forEach(([i,cid])=>{
+    const card = document.getElementById(cid+'-track')?.closest('.ecard');
+    if(card){
+      const tit = card.querySelector('.ev-title'); if(tit) document.getElementById('ap-ev'+i+'-title').value = tit.textContent.trim();
+      const dsc = card.querySelector('.ev-desc'); if(dsc) document.getElementById('ap-ev'+i+'-desc').value = dsc.textContent.trim();
+    }
+  });
+}
+
+// ── SAVE TEXTOS ──
+window.apSaveTextosDOM = function apSaveTextosDOM(){
+  // hero sub
+  const hs = document.querySelector('.hero-sub');
+  if(hs) hs.textContent = document.getElementById('ap-hero-sub').value;
+  // about
+  const at = document.querySelector('#about .about-text p');
+  if(at){ at.innerHTML = document.getElementById('ap-about-text').value; }
+  // ev0
+  const hec = document.querySelector('.hero-ev-content');
+  if(hec){
+    const tag = hec.querySelector('.ev-tag'); if(tag) tag.textContent = document.getElementById('ap-ev0-tag').value;
+    const tit = hec.querySelector('.ev-title'); if(tit) tit.textContent = document.getElementById('ap-ev0-title').value;
+    const dsc = hec.querySelector('.ev-desc'); if(dsc) dsc.textContent = document.getElementById('ap-ev0-desc').value;
+  }
+  // ev1,2,3
+  [[1,'c1'],[2,'c2'],[3,'c3']].forEach(([i,cid])=>{
+    const card = document.getElementById(cid+'-track')?.closest('.ecard');
+    if(card){
+      const tit = card.querySelector('.ev-title'); if(tit) tit.textContent = document.getElementById('ap-ev'+i+'-title').value;
+      const dsc = card.querySelector('.ev-desc'); if(dsc) dsc.textContent = document.getElementById('ap-ev'+i+'-desc').value;
+    }
+  });
+  flashSaved('ap-saved-textos');
+}
+function apSaveTextos(){ window.apSaveTextosFirebase ? window.apSaveTextosFirebase() : window.apSaveTextosDOM(); }
+
+// ── CARRUSEL ADMIN ──
+const carruselDefs = [
+  {id:'c0', label:'La marca se movió con nosotros', height:'420px'},
+  {id:'c1', label:'FIT 2025', height:'200px'},
+  {id:'c2', label:'Campaña Te cuesta $0', height:'200px'},
+  {id:'c3', label:'Chile Rugby', height:'200px'},
+];
+
+// Estado en memoria de slides por carrusel
+const slidesState = {};
+
+function buildCarruselList(){
+  carruselDefs.forEach(def => {
+    // Leer slides actuales del DOM si no están en state
+    if(!slidesState[def.id]){
+      slidesState[def.id] = [];
+      document.querySelectorAll('#'+def.id+'-track .carousel-slide').forEach(slide => {
+        const img = slide.querySelector('img');
+        if(img) slidesState[def.id].push({src: img.src, name: img.src.split('/').pop(), file: null});
+      });
+    }
+  });
+  renderCarruselList();
+}
+
+function renderCarruselList(){
+  const container = document.getElementById('ap-carruseles-list');
+  container.innerHTML = '';
+  carruselDefs.forEach(def => {
+    const slides = slidesState[def.id] || [];
+    const block = document.createElement('div');
+    block.className = 'ap-carousel-block';
+    block.innerHTML = `
+      <div class="ap-subtitle" style="margin-top:0">${def.label}</div>
+      <div class="ap-slides-list" id="ap-slides-${def.id}">
+        ${slides.map((s,i) => `
+          <div class="ap-slide-item" id="ap-slide-${def.id}-${i}">
+            <img class="ap-slide-thumb" src="${s.src}" onerror="this.style.background='#ddd'">
+            <span class="ap-slide-name">${s.name}</span>
+            <button class="ap-slide-del" onclick="removeSlide('${def.id}',${i})" title="Eliminar">✕</button>
+          </div>
+        `).join('')}
+      </div>
+      <div class="ap-add-slide">
+        <input type="file" accept="image/*" multiple class="ap-file-input" id="ap-file-${def.id}" onchange="addSlides('${def.id}',this)">
+        <button class="ap-file-btn" onclick="document.getElementById('ap-file-${def.id}').click()">+ Agregar foto</button>
+        <span style="font-size:.72rem;color:#aaa">${slides.length} foto${slides.length!==1?'s':''}</span>
+      </div>
+    `;
+    container.appendChild(block);
+  });
+}
+
+function removeSlide(carId, idx){
+  slidesState[carId].splice(idx,1);
+  renderCarruselList();
+}
+
+function addSlides(carId, input){
+  const files = Array.from(input.files);
+  files.forEach(file => {
+    const url = URL.createObjectURL(file);
+    slidesState[carId].push({src: url, name: file.name, file: file});
+  });
+  input.value = '';
+  renderCarruselList();
+}
+
+function apSaveCarruseles(){ if(window.apSaveCarruselesFirebase){ window.apSaveCarruselesFirebase(); return; } apSaveCarruselesLocal(); }
+function apSaveCarruselesLocal(){
+  carruselDefs.forEach(def => {
+    const slides = slidesState[def.id] || [];
+    const track = document.getElementById(def.id+'-track');
+    const dotsEl = document.getElementById(def.id+'-dots');
+    if(!track) return;
+
+    // Reconstruir slides en el DOM
+    track.innerHTML = '';
+    slides.forEach(s => {
+      const div = document.createElement('div');
+      div.className = 'carousel-slide';
+      const img = document.createElement('img');
+      img.src = s.src;
+      img.style.cssText = 'height:'+def.height+';margin-bottom:0;object-fit:cover;width:100%;border-radius:3px';
+      div.appendChild(img);
+      track.appendChild(div);
+    });
+
+    // Reconstruir dots
+    if(dotsEl){
+      dotsEl.innerHTML = '';
+      slides.forEach((_,i) => {
+        const btn = document.createElement('button');
+        btn.className = 'cdot' + (i===0?' active':'');
+        btn.onclick = () => goTo(def.id, i);
+        dotsEl.appendChild(btn);
+      });
+    }
+
+    // Reset posición
+    track.style.transform = 'translateX(0)';
+    carousels[def.id] = {current:0, total:slides.length};
+
+    // Mostrar/ocultar controles
+    const card = track.closest('.carousel-card');
+    const show = slides.length > 1;
+    if(dotsEl) dotsEl.style.display = show ? 'flex' : 'none';
+    if(card) card.querySelectorAll('.carousel-btn').forEach(b => b.style.display = show ? 'flex' : 'none');
+  });
+  flashSaved('ap-saved-carruseles');
+}
+
+function flashSaved(id){
+  const el = document.getElementById(id);
+  el.style.opacity='1';
+  setTimeout(()=>{ el.style.opacity='0'; }, 2200);
+}
+</script>
+
+<script>
+// Animación escalonada proj-cards
+const projCards = document.querySelectorAll('.proj-card');
+const projObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      const cards = e.target.closest('.proj-grid-top, .proj-grid-bot')?.querySelectorAll('.proj-card') || [e.target];
+      cards.forEach((c,i) => setTimeout(() => c.classList.add('visible'), i * 100));
+      projObs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.15});
+projCards.forEach(c => projObs.observe(c));
+</script>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDiXAUAdJRlDuHMojTlRp6aNSUjkPxLqII",
+  authDomain: "kevin-portfolio-ebf25.firebaseapp.com",
+  projectId: "kevin-portfolio-ebf25",
+  storageBucket: "kevin-portfolio-ebf25.firebasestorage.app",
+  messagingSenderId: "155615908638",
+  appId: "1:155615908638:web:2c6c0a1112ea5a6346af0f"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window._db = db;
+window._doc = doc;
+window._getDoc = getDoc;
+window._setDoc = setDoc;
+
+// ── CARGAR DATOS AL INICIAR ──
+async function loadPortfolioData() {
+  try {
+    const snap = await getDoc(doc(db, 'portfolio', 'contenido'));
+    if (!snap.exists()) return;
+    const data = snap.data();
+
+    // Textos
+    if (data.heroSub) { const el = document.querySelector('.hero-sub'); if(el) el.textContent = data.heroSub; }
+    if (data.aboutText) { const el = document.querySelector('#about .about-text p'); if(el) el.innerHTML = data.aboutText; }
+    if (data.ev0Tag) { const el = document.querySelector('.hero-ev-content .ev-tag'); if(el) el.textContent = data.ev0Tag; }
+    if (data.ev0Title) { const el = document.querySelector('.hero-ev-content .ev-title'); if(el) el.textContent = data.ev0Title; }
+    if (data.ev0Desc) { const el = document.querySelector('.hero-ev-content .ev-desc'); if(el) el.textContent = data.ev0Desc; }
+
+    const evRows = [
+      {id:'c1', titleKey:'ev1Title', descKey:'ev1Desc'},
+      {id:'c2', titleKey:'ev2Title', descKey:'ev2Desc'},
+      {id:'c3', titleKey:'ev3Title', descKey:'ev3Desc'},
+    ];
+    evRows.forEach(({id, titleKey, descKey}) => {
+      const card = document.getElementById(id+'-track')?.closest('.ecard');
+      if (!card) return;
+      if (data[titleKey]) { const el = card.querySelector('.ev-title'); if(el) el.textContent = data[titleKey]; }
+      if (data[descKey]) { const el = card.querySelector('.ev-desc'); if(el) el.textContent = data[descKey]; }
+    });
+
+    // Carruseles — fotos guardadas en Firebase Storage
+    const carDefs = [
+      {id:'c0', height:'420px'},
+      {id:'c1', height:'200px'},
+      {id:'c2', height:'200px'},
+      {id:'c3', height:'200px'},
+    ];
+    carDefs.forEach(def => {
+      const urls = data['slides_'+def.id];
+      if (!urls || !urls.length) return;
+      const track = document.getElementById(def.id+'-track');
+      const dotsEl = document.getElementById(def.id+'-dots');
+      if (!track) return;
+      track.innerHTML = '';
+      if (dotsEl) dotsEl.innerHTML = '';
+      urls.forEach((url, i) => {
+        const div = document.createElement('div');
+        div.className = 'carousel-slide';
+        const img = document.createElement('img');
+        img.src = url;
+        img.style.cssText = 'height:'+def.height+';margin-bottom:0;object-fit:cover;width:100%;border-radius:3px';
+        div.appendChild(img);
+        track.appendChild(div);
+        if (dotsEl) {
+          const btn = document.createElement('button');
+          btn.className = 'cdot' + (i===0?' active':'');
+          btn.onclick = () => window.goTo(def.id, i);
+          dotsEl.appendChild(btn);
+        }
+      });
+      track.style.transform = 'translateX(0)';
+      window.carousels[def.id] = {current:0, total:urls.length};
+      const card = track.closest('.carousel-card');
+      const show = urls.length > 1;
+      if (dotsEl) dotsEl.style.display = show ? 'flex' : 'none';
+      if (card) card.querySelectorAll('.carousel-btn').forEach(b => b.style.display = show ? 'flex' : 'none');
+    });
+
+  } catch(e) { console.log('Sin datos previos:', e.message); }
+}
+
+// ── GUARDAR TEXTOS ──
+window.apSaveTextosFirebase = async function() {
+  const data = {
+    heroSub: document.getElementById('ap-hero-sub')?.value || '',
+    aboutText: document.getElementById('ap-about-text')?.value || '',
+    ev0Tag: document.getElementById('ap-ev0-tag')?.value || '',
+    ev0Title: document.getElementById('ap-ev0-title')?.value || '',
+    ev0Desc: document.getElementById('ap-ev0-desc')?.value || '',
+    ev1Title: document.getElementById('ap-ev1-title')?.value || '',
+    ev1Desc: document.getElementById('ap-ev1-desc')?.value || '',
+    ev2Title: document.getElementById('ap-ev2-title')?.value || '',
+    ev2Desc: document.getElementById('ap-ev2-desc')?.value || '',
+    ev3Title: document.getElementById('ap-ev3-title')?.value || '',
+    ev3Desc: document.getElementById('ap-ev3-desc')?.value || '',
+  };
+  try {
+    await setDoc(doc(db, 'portfolio', 'contenido'), data, {merge: true});
+    // Aplicar al DOM
+    window.apSaveTextosDOM();
+    window.flashSaved('ap-saved-textos');
+  } catch(e) { alert('Error al guardar: ' + e.message); }
+};
+
+// ── GUARDAR CARRUSELES ──
+window.apSaveCarruselesFirebase = null; // Storage no disponible en plan gratuito
+window.apSaveCarruselesLocal_orig = async function() {
+  const carDefs = [
+    {id:'c0', height:'420px'},
+    {id:'c1', height:'200px'},
+    {id:'c2', height:'200px'},
+    {id:'c3', height:'200px'},
+  ];
+  const btn = document.querySelector('#ap-carruseles .ap-save');
+  if(btn){ btn.textContent = 'Subiendo fotos...'; btn.disabled = true; }
+
+  try {
+    const updates = {};
+    for (const def of carDefs) {
+      const slides = window.slidesState[def.id] || [];
+      const urls = [];
+      for (const slide of slides) {
+        if (slide.file) {
+          // Subir foto nueva a Storage
+          const storageRef = ref(storage, 'carruseles/'+def.id+'/'+Date.now()+'-'+slide.name);
+          await uploadBytes(storageRef, slide.file);
+          const url = await getDownloadURL(storageRef);
+          urls.push(url);
+        } else {
+          urls.push(slide.src);
+        }
+      }
+      updates['slides_'+def.id] = urls;
+
+      // Actualizar DOM
+      const track = document.getElementById(def.id+'-track');
+      const dotsEl = document.getElementById(def.id+'-dots');
+      if (!track) continue;
+      track.innerHTML = '';
+      if (dotsEl) dotsEl.innerHTML = '';
+      urls.forEach((url, i) => {
+        const div = document.createElement('div');
+        div.className = 'carousel-slide';
+        const img = document.createElement('img');
+        img.src = url;
+        img.style.cssText = 'height:'+def.height+';margin-bottom:0;object-fit:cover;width:100%;border-radius:3px';
+        div.appendChild(img);
+        track.appendChild(div);
+        if (dotsEl) {
+          const b = document.createElement('button');
+          b.className = 'cdot'+(i===0?' active':'');
+          b.onclick = () => window.goTo(def.id, i);
+          dotsEl.appendChild(b);
+        }
+      });
+      track.style.transform = 'translateX(0)';
+      window.carousels[def.id] = {current:0, total:urls.length};
+      const card = track.closest('.carousel-card');
+      const show = urls.length > 1;
+      if (dotsEl) dotsEl.style.display = show ? 'flex' : 'none';
+      if (card) card.querySelectorAll('.carousel-btn').forEach(b => b.style.display = show ? 'flex' : 'none');
+    }
+
+    await setDoc(doc(db, 'portfolio', 'contenido'), updates, {merge: true});
+    window.flashSaved('ap-saved-carruseles');
+  } catch(e) { alert('Error: ' + e.message); }
+  finally { if(btn){ btn.textContent = 'Aplicar cambios'; btn.disabled = false; } }
+};
+
+document.addEventListener('DOMContentLoaded', loadPortfolioData);
+</script>
+
+</body>
+</html>
