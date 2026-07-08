@@ -297,10 +297,6 @@ h1{animation:fadeUp .6s .2s both}
 @media(max-width:900px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
 
-.wave-divider{width:100%;overflow:hidden;line-height:0;display:block}
-.wave-divider svg{display:block;width:100%}
-.wave-down{margin-bottom:-2px}
-.wave-up{margin-top:-2px}
 </style>
 </head>
 <body>
@@ -441,7 +437,7 @@ h1{animation:fadeUp .6s .2s both}
 </section>
 
 
-<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,60 C300,0 900,0 1200,60 L1200,0 L0,0 Z" fill="#00528F"/></svg></div>
+
 <section id="logros">
   <div class="logros-grid">
     <div class="logro-card">
@@ -463,7 +459,7 @@ h1{animation:fadeUp .6s .2s both}
   </div>
 </section>
 
-<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" fill="#ffffff"/></svg></div>
+
 <section id="events">
   <div class="sec-eyebrow reveal">03 — En el campo</div>
   <h2 class="reveal reveal-delay-1">Eventos &amp; Campañas</h2>
@@ -579,7 +575,7 @@ h1{animation:fadeUp .6s .2s both}
   </div>
 </section>
 
-<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,60 C300,0 900,0 1200,60 L1200,0 L0,0 Z" fill="#edecea"/></svg></div>
+
 <section id="projects">
   <div class="sec-eyebrow reveal">04 — Herramientas digitales</div>
   <h2 class="reveal reveal-delay-1">Proyectos</h2>
@@ -590,14 +586,14 @@ h1{animation:fadeUp .6s .2s both}
       <div class="proj-num">01</div>
       <div class="proj-title">Tarjetas Virtuales con QR</div>
       <div class="proj-desc">Generador de tarjetas de presentación digitales con QR, para compartir contacto al instante en eventos y ferias.</div>
-      <div class="proj-link">Ver proyecto</div>
+      <div class="proj-link">Ver demo</div>
     </div>
     <div class="proj-card" onclick="openModal('cobranding')" style="cursor:pointer">
       <div class="proj-tag">Branding · Herramienta</div>
       <div class="proj-num">02</div>
       <div class="proj-title">Compositor de Cobranding</div>
       <div class="proj-desc">Plataforma para que cada país arme piezas cobrandeadas con partners locales, sin depender de diseño.</div>
-      <div class="proj-link">Ver proyecto</div>
+      <div class="proj-link">Ver demo</div>
     </div>
   </div>
   <div class="proj-grid-bot reveal reveal-delay-3">
@@ -606,26 +602,26 @@ h1{animation:fadeUp .6s .2s both}
       <div class="proj-num">03</div>
       <div class="proj-title">Perfiles de Cobertura</div>
       <div class="proj-desc">Herramienta interna que eliminó el proceso manual de armado de perfiles. El equipo comercial genera PDFs con marca institucional en minutos.</div>
-      <div class="proj-link">Ver proyecto</div>
+      <div class="proj-link">Ver demo</div>
     </div>
     <div class="proj-card" onclick="openModal('promos')" style="cursor:pointer">
       <div class="proj-tag">Comercial · Marketing</div>
       <div class="proj-num">04</div>
       <div class="proj-title">Piezas para Promociones</div>
       <div class="proj-desc">Editor de flyers promocionales sobre plantillas aprobadas, con flujo de revisión antes de publicar.</div>
-      <div class="proj-link">Ver proyecto</div>
+      <div class="proj-link">Ver demo</div>
     </div>
     <div class="proj-card" onclick="openModal('invitaciones')" style="cursor:pointer">
       <div class="proj-tag">Eventos · Digital</div>
       <div class="proj-num">05</div>
       <div class="proj-title">Editor de Invitaciones</div>
       <div class="proj-desc">Editor visual para armar invitaciones a eventos en formato Story o Email, con QR de inscripción.</div>
-      <div class="proj-link">Ver proyecto</div>
+      <div class="proj-link">Ver demo</div>
     </div>
   </div>
 </section>
 
-<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" fill="#ffffff"/></svg></div>
+
 <section id="contact">
   <div class="sec-eyebrow reveal">05 — Contacto</div>
   <h2 class="reveal reveal-delay-1">Hablemos</h2>
@@ -835,6 +831,8 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
     <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
     <div class="modal-footer">
       <a href="https://kevinszalai.github.io/tarjetaqr/" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    
+      <a href="mailto:kevinszalai@hotmail.com?subject=Solicitar acceso — Tarjetas Virtuales con QR&body=Hola Kevin,%0A%0AMe gustaría solicitar acceso a la herramienta "Tarjetas Virtuales con QR".%0A%0AMi nombre es:%0AEmpresa:%0AMotivo:%0A%0AQuedo a disposición." class="modal-link" style="color:var(--teal)">Solicitar acceso ↗</a>
     </div>
   </div>
 </div>
@@ -877,6 +875,8 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
     <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
     <div class="modal-footer">
       <a href="https://kevinszalai.github.io/compositor/index.html" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    
+      <a href="mailto:kevinszalai@hotmail.com?subject=Solicitar acceso — Compositor de Cobranding&body=Hola Kevin,%0A%0AMe gustaría solicitar acceso a la herramienta "Compositor de Cobranding".%0A%0AMi nombre es:%0AEmpresa:%0AMotivo:%0A%0AQuedo a disposición." class="modal-link" style="color:var(--teal)">Solicitar acceso ↗</a>
     </div>
   </div>
 </div>
@@ -920,6 +920,8 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
     <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
     <div class="modal-footer">
       <a href="https://kevinszalai.github.io/generadorperfil/" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    
+      <a href="mailto:kevinszalai@hotmail.com?subject=Solicitar acceso — Perfiles de Cobertura&body=Hola Kevin,%0A%0AMe gustaría solicitar acceso a la herramienta "Perfiles de Cobertura".%0A%0AMi nombre es:%0AEmpresa:%0AMotivo:%0A%0AQuedo a disposición." class="modal-link" style="color:var(--teal)">Solicitar acceso ↗</a>
     </div>
   </div>
 </div>
@@ -956,6 +958,8 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
     <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
     <div class="modal-footer">
       <a href="https://kevinszalai.github.io/ua-promo-platform-/index.html" target="_blank" rel="noopener" class="modal-link">Ir a la herramienta ↗</a>
+    
+      <a href="mailto:kevinszalai@hotmail.com?subject=Solicitar acceso — Piezas para Promociones&body=Hola Kevin,%0A%0AMe gustaría solicitar acceso a la herramienta "Piezas para Promociones".%0A%0AMi nombre es:%0AEmpresa:%0AMotivo:%0A%0AQuedo a disposición." class="modal-link" style="color:var(--teal)">Solicitar acceso ↗</a>
     </div>
   </div>
 </div>
@@ -994,7 +998,9 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
       </div>
     </div>
     <div class="modal-note">Ilustración representativa de la interfaz — la plataforma real está protegida por acceso interno.</div>
-    
+    <div class="modal-footer">
+      <a href="mailto:kevinszalai@hotmail.com?subject=Solicitar acceso — Editor de Invitaciones&body=Hola Kevin,%0A%0AMe gustaría solicitar acceso a la herramienta "Editor de Invitaciones".%0A%0AMi nombre es:%0AEmpresa:%0AMotivo:%0A%0AQuedo a disposición." class="modal-link" style="color:var(--teal)">Solicitar acceso ↗</a>
+    </div>
   </div>
 </div>
 
