@@ -7,8 +7,9 @@
 <meta name="description" content="Kevin Szalai — Analista Sr. de Marketing y Publicidad con trayectoria regional en LATAM. Estrategias 360°, eventos de gran escala, fidelización y campañas de impacto.">
 <meta property="og:title" content="Kevin Szalai — Marketing & Publicidad LATAM">
 <meta property="og:description" content="Analista Sr. de Marketing y Publicidad con trayectoria regional en LATAM.">
-<meta property="og:image" content="https://kevinszalai.github.io/img/preview.jpg">
+<meta property="og:image" content="https://kevinszalai.github.io/preview.jpg">
 <meta property="og:url" content="https://kevinszalai.github.io/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%2300528F'/><text x='16' y='22' font-family='Arial' font-size='13' font-weight='bold' fill='white' text-anchor='middle'>KS</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -91,11 +92,11 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .t-bullets li{font-size:.88rem;line-height:1.7;color:var(--muted);padding-left:1rem;position:relative}
 .t-bullets li::before{content:'›';position:absolute;left:0;color:var(--blue);font-weight:700}
 
-#events{background:var(--white);padding-bottom:2rem}
+#events{background:var(--white);padding-bottom:2rem;padding-top:5rem}
 .events-lead{font-size:.97rem;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:3rem}
 
 /* LAYOUT EVENTOS: principal arriba, 3 abajo */
-.ev-principal{border-radius:4px;overflow:hidden;margin-bottom:2px}
+.ev-principal{border-radius:10px;overflow:hidden;margin-bottom:8px;margin-top:.5rem}
 .ev-fila3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:4px;overflow:hidden}
 
 .ecard{background:var(--white);padding:2rem;position:relative;overflow:hidden;transition:background .25s}
@@ -121,7 +122,7 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 .ecard.hero-ev .slide-caption{color:rgba(255,255,255,.4)}
 
 .carousel-card{position:relative;overflow:hidden}
-.carousel-wrapper{overflow:hidden;width:100%;border-radius:3px}
+.carousel-wrapper{overflow:hidden;width:100%;border-radius:0}
 .carousel-track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);width:100%}
 .carousel-slide{min-width:100%;flex-shrink:0;width:100%}
 .carousel-dots{display:flex;justify-content:center;gap:5px;padding:8px 0 12px}
@@ -138,11 +139,13 @@ h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);f
 
 #projects{background:var(--bg2)}
 .proj-intro{font-size:.97rem;line-height:1.8;color:var(--muted);max-width:580px;margin-bottom:3rem}
-.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:4px;overflow:hidden}
+.proj-grid-top{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border-radius:4px 4px 0 0;overflow:hidden;margin-bottom:2px}.proj-grid-bot{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border-radius:0 0 4px 4px;overflow:hidden}
 .proj-card{background:var(--white);padding:2rem 1.8rem;text-decoration:none;color:inherit;display:block;transition:background .25s;position:relative;overflow:hidden}
 .proj-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s}
 .proj-card:hover{background:var(--blue-light)}
 .proj-card:hover::after{transform:scaleX(1)}
+.proj-card{opacity:0;transform:translateY(16px);transition:background .25s,opacity .5s,transform .5s}
+.proj-card.visible{opacity:1;transform:translateY(0)}
 .proj-tag{font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.8rem;font-weight:500}
 .proj-num{font-family:'Space Grotesk',sans-serif;font-size:3rem;font-weight:700;color:rgba(0,82,143,.1);line-height:1;margin-bottom:.4rem}
 .proj-title{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;margin-bottom:.6rem;line-height:1.2;color:var(--black)}
@@ -191,7 +194,7 @@ h1{animation:fadeUp .6s .2s both}
   .hero{grid-template-columns:1fr;padding:5.5rem 1.5rem 3rem;gap:2.5rem}
   section{padding:4rem 1.5rem}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
-  .proj-grid,.ev-fila3{grid-template-columns:1fr}
+  .proj-grid-top,.proj-grid-bot,.ev-fila3{grid-template-columns:1fr}
   .tray{padding:.65rem 1.5rem}
   footer{padding:1.5rem;flex-direction:column;gap:.8rem;text-align:center}
 }
@@ -211,8 +214,8 @@ h1{animation:fadeUp .6s .2s both}
   footer{padding:1.2rem}
 }
 
-.ecard.hero-ev.split{display:grid;grid-template-columns:1.2fr 1fr;gap:0;padding:0}
-.hero-ev-media{position:relative;overflow:hidden}
+.ecard.hero-ev.split{display:grid;grid-template-columns:1.2fr 1fr;gap:0;padding:0;border-radius:10px;overflow:hidden}
+.hero-ev-media{position:relative;overflow:hidden;padding:1.2rem 0 1.2rem 1.2rem}
 .hero-ev-content{padding:2rem;display:flex;flex-direction:column;justify-content:center}
 @media(max-width:900px){.ecard.hero-ev.split{grid-template-columns:1fr}.hero-ev-media{order:1}.hero-ev-content{order:2}}
 
@@ -236,8 +239,8 @@ h1{animation:fadeUp .6s .2s both}
 .modal-link:hover{text-decoration:underline}
 
 /* ── ADMIN ── */
-#admin-btn{position:fixed;bottom:1.5rem;right:1.5rem;z-index:500;background:var(--blue);color:#fff;border:none;border-radius:50%;width:44px;height:44px;font-size:1.1rem;cursor:pointer;box-shadow:0 4px 16px rgba(0,82,143,.35);display:flex;align-items:center;justify-content:center;transition:background .2s}
-#admin-btn:hover{background:var(--blue2)}
+#admin-btn{background:none;border:none;color:var(--muted2);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;font-family:"Inter",sans-serif;opacity:.5;transition:opacity .2s;padding:.2rem .5rem}
+#admin-btn:hover{opacity:1}
 #admin-panel{display:none;position:fixed;inset:0;z-index:900;background:rgba(0,0,0,.55);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:1.5rem}
 #admin-panel.open{display:flex}
 .ap-box{background:#fff;border-radius:10px;max-width:720px;width:100%;max-height:88vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.25);display:flex;flex-direction:column}
@@ -273,6 +276,31 @@ h1{animation:fadeUp .6s .2s both}
 .ap-file-btn{background:none;border:1.5px dashed #aaa;border-radius:4px;padding:.5rem 1rem;font-size:.75rem;color:#666;cursor:pointer;transition:border-color .2s,color .2s;font-family:'Inter',sans-serif}
 .ap-file-btn:hover{border-color:var(--blue);color:var(--blue)}
 .ap-carousel-block{background:#f9f8f6;border:1px solid #e5e3df;border-radius:6px;padding:1rem;margin-bottom:1rem}
+
+.hero-photo{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);margin-bottom:1.2rem;display:block;box-shadow:0 4px 16px rgba(0,82,143,.2)}
+
+.about-photo-row{display:flex;align-items:center;gap:1.2rem;margin-bottom:1.5rem}
+.about-photo{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--blue);flex-shrink:0;box-shadow:0 4px 14px rgba(0,82,143,.18)}
+.about-photo-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;color:var(--black)}
+.about-photo-role{font-size:.78rem;color:var(--muted);margin-top:.15rem}
+
+.hero-photo-big{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;border-radius:0}
+.hero-photo-col{position:relative;overflow:hidden;min-height:400px;background:var(--blue-light)}
+@media(max-width:900px){.hero-photo-col{min-height:280px;order:-1}}
+
+#logros{background:var(--blue);color:#fff;padding:3rem}
+.logros-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.15);border-radius:4px;overflow:hidden;margin-top:0}
+.logro-card{background:var(--blue);padding:2rem 1.5rem;text-align:center;transition:background .25s}
+.logro-card:hover{background:var(--blue2)}
+.logro-num{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;color:#fff;line-height:1}
+.logro-label{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:.4rem;line-height:1.4}
+@media(max-width:900px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
+
+.wave-divider{width:100%;overflow:hidden;line-height:0;display:block}
+.wave-divider svg{display:block;width:100%}
+.wave-down{margin-bottom:-2px}
+.wave-up{margin-top:-2px}
 </style>
 </head>
 <body>
@@ -333,6 +361,13 @@ h1{animation:fadeUp .6s .2s both}
   <h2 class="reveal reveal-delay-1">Quién soy</h2>
   <div class="about-grid reveal reveal-delay-2">
     <div class="about-text">
+      <div class="about-photo-row">
+        <img src="kevin-foto.jpg" alt="Kevin Szalai" class="about-photo">
+        <div>
+          <div class="about-photo-name">Kevin Szalai</div>
+          <div class="about-photo-role">Marketing &amp; Publicidad · LATAM</div>
+        </div>
+      </div>
       <p>Profesional de Marketing y Publicidad especializado en <strong>estrategias regionales para LATAM</strong>. Con background emprendedor y experiencia corporativa en Universal Assistance (Grupo Zurich), donde lidero fidelización, campañas multicanal, eventos de gran escala y lanzamiento de productos — desde el naming hasta la ejecución creativa.</p>
       <div class="skill-tags">
         <span class="skill-tag">Marketing Regional 360°</span><span class="skill-tag">Campañas de Incentivos</span>
@@ -405,6 +440,30 @@ h1{animation:fadeUp .6s .2s both}
   </a>
 </section>
 
+
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,60 C300,0 900,0 1200,60 L1200,0 L0,0 Z" fill="#00528F"/></svg></div>
+<section id="logros">
+  <div class="logros-grid">
+    <div class="logro-card">
+      <div class="logro-num">45</div>
+      <div class="logro-label">Años de UA<br>acompañados</div>
+    </div>
+    <div class="logro-card">
+      <div class="logro-num">10+</div>
+      <div class="logro-label">Ferias internacionales<br>coordinadas</div>
+    </div>
+    <div class="logro-card">
+      <div class="logro-num">3</div>
+      <div class="logro-label">Programas de<br>fidelización liderados</div>
+    </div>
+    <div class="logro-card">
+      <div class="logro-num">5</div>
+      <div class="logro-label">Mercados activos<br>en LATAM</div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" fill="#ffffff"/></svg></div>
 <section id="events">
   <div class="sec-eyebrow reveal">03 — En el campo</div>
   <h2 class="reveal reveal-delay-1">Eventos &amp; Campañas</h2>
@@ -415,14 +474,16 @@ h1{animation:fadeUp .6s .2s both}
     <div class="ecard hero-ev carousel-card split">
       <div class="hero-ev-media">
         <div class="carousel-wrapper"><div class="carousel-track" id="c0-track">
-          <div class="carousel-slide"><img src="agenda-1.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-2.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-3.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-4.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-5.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-6.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-7.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
-          <div class="carousel-slide"><img src="agenda-8.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%"></div>
+          <div class="carousel-slide"><img src="agenda-1.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-2.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-9.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-3.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-4.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-10.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-5.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-6.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-7.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-8.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
         </div></div>
         <div class="carousel-dots" id="c0-dots">
           <button class="cdot active" onclick="goTo('c0',0)"></button>
@@ -433,6 +494,8 @@ h1{animation:fadeUp .6s .2s both}
           <button class="cdot" onclick="goTo('c0',5)"></button>
           <button class="cdot" onclick="goTo('c0',6)"></button>
           <button class="cdot" onclick="goTo('c0',7)"></button>
+          <button class="cdot" onclick="goTo('c0',8)"></button>
+          <button class="cdot" onclick="goTo('c0',9)"></button>
         </div>
         <button class="carousel-btn prev" onclick="move('c0',-1)" style="top:210px">‹</button>
         <button class="carousel-btn next" onclick="move('c0',1)" style="top:210px">›</button>
@@ -474,47 +537,54 @@ h1{animation:fadeUp .6s .2s both}
     <div class="ecard carousel-card">
       <div class="carousel-wrapper"><div class="carousel-track" id="c2-track">
         <div class="carousel-slide"><img src="campana-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Campaña — 2</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Campaña — 3</span></div></div>
+        <div class="carousel-slide"><img src="campana-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-4.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-5.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
       </div></div>
       <div class="carousel-dots" id="c2-dots">
         <button class="cdot active" onclick="goTo('c2',0)"></button>
         <button class="cdot" onclick="goTo('c2',1)"></button>
         <button class="cdot" onclick="goTo('c2',2)"></button>
+        <button class="cdot" onclick="goTo('c2',3)"></button>
+        <button class="cdot" onclick="goTo('c2',4)"></button>
       </div>
       <button class="carousel-btn prev" onclick="move('c2',-1)">‹</button>
       <button class="carousel-btn next" onclick="move('c2',1)">›</button>
       <div class="ev-tag">Campaña Regional</div>
       <div class="ev-title">Campaña "Te cuesta $0"</div>
-      <div class="ev-desc">Campaña regional con activación interna. Mensaje directo, impacto en toda la región.</div>
+      <div class="ev-desc">Campaña regional con rodaje propio y activación interna. Del set de filmación a toda la región.</div>
     </div>
 
     <div class="ecard carousel-card">
       <div class="carousel-wrapper"><div class="carousel-track" id="c3-track">
         <div class="carousel-slide"><img src="chile-rugby-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Chile Rugby — 2</span></div></div>
-        <div class="carousel-slide"><div class="ev-img-ph" style="height:200px"><span>Chile Rugby — 3</span></div></div>
+        <div class="carousel-slide"><img src="rugby-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-4.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
       </div></div>
       <div class="carousel-dots" id="c3-dots">
         <button class="cdot active" onclick="goTo('c3',0)"></button>
         <button class="cdot" onclick="goTo('c3',1)"></button>
         <button class="cdot" onclick="goTo('c3',2)"></button>
+        <button class="cdot" onclick="goTo('c3',3)"></button>
       </div>
       <button class="carousel-btn prev" onclick="move('c3',-1)">‹</button>
       <button class="carousel-btn next" onclick="move('c3',1)">›</button>
-      <div class="ev-tag">Sponsorship · Deporte · Chile</div>
-      <div class="ev-title">Sponsor oficial Chile Rugby</div>
-      <div class="ev-desc">Sponsor oficial de Chile Rugby — incluyendo Los Cóndores en Francia 2023.</div>
+      <div class="ev-tag">Sponsorship · Rugby · LATAM</div>
+      <div class="ev-title">Chile Rugby &amp; equipos de la región</div>
+      <div class="ev-desc">Sponsor oficial de Chile Rugby — Los Cóndores en el Mundial Francia 2023 — y de otros equipos de rugby de la región. El logo de UA en la camiseta.</div>
     </div>
 
   </div>
 </section>
 
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,60 C300,0 900,0 1200,60 L1200,0 L0,0 Z" fill="#edecea"/></svg></div>
 <section id="projects">
   <div class="sec-eyebrow reveal">04 — Herramientas digitales</div>
   <h2 class="reveal reveal-delay-1">Proyectos</h2>
   <p class="proj-intro reveal reveal-delay-2">Plataformas propias, desarrolladas para dar autonomía a los equipos comerciales de la región, permitiéndoles resolver necesidades del día a día sin depender de procesos intermedios.</p>
-  <div class="proj-grid reveal reveal-delay-2">
+  <div class="proj-grid-top reveal reveal-delay-2">
     <div class="proj-card" onclick="openModal('tarjetas')" style="cursor:pointer">
       <div class="proj-tag">Ventas · Digital</div>
       <div class="proj-num">01</div>
@@ -529,6 +599,8 @@ h1{animation:fadeUp .6s .2s both}
       <div class="proj-desc">Plataforma para que cada país arme piezas cobrandeadas con partners locales, sin depender de diseño.</div>
       <div class="proj-link">Ver proyecto</div>
     </div>
+  </div>
+  <div class="proj-grid-bot reveal reveal-delay-3">
     <div class="proj-card" onclick="openModal('perfiles')" style="cursor:pointer">
       <div class="proj-tag">Comercial · UX</div>
       <div class="proj-num">03</div>
@@ -553,6 +625,7 @@ h1{animation:fadeUp .6s .2s both}
   </div>
 </section>
 
+<div class="wave-divider wave-down"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" height="40"><path d="M0,0 C300,60 900,60 1200,0 L1200,60 L0,60 Z" fill="#ffffff"/></svg></div>
 <section id="contact">
   <div class="sec-eyebrow reveal">05 — Contacto</div>
   <h2 class="reveal reveal-delay-1">Hablemos</h2>
@@ -585,6 +658,7 @@ h1{animation:fadeUp .6s .2s both}
 <footer>
   <span class="footer-copy">© 2026 Kevin Szalai · Buenos Aires, Argentina</span>
   <span class="footer-name">Marketing &amp; Publicidad LATAM</span>
+  <button id="admin-btn" onclick="openAdmin()">Admin</button>
 </footer>
 
 <script>
@@ -604,25 +678,117 @@ statNums.forEach(el=>numObs.observe(el));
 // CAROUSEL
 const carousels={};
 function initCarousel(id){
-  const slides=document.querySelectorAll('#'+id+'-track .carousel-slide');
-  const total=slides.length;
-  carousels[id]={current:0,total};
   const track=document.getElementById(id+'-track');
   if(!track)return;
-  const card=track.closest('.carousel-card');
-  const realSlides=Array.from(slides).filter(s=>s.querySelector('img')).length;
+  const slides=Array.from(track.querySelectorAll('.carousel-slide'));
+  const total=slides.length;
+  const realSlides=slides.filter(s=>s.querySelector('img')).length;
   const showControls=realSlides>1;
+
+  // Clonar primer y último slide para loop infinito
+  if(total>1){
+    const firstClone=slides[0].cloneNode(true);
+    const lastClone=slides[total-1].cloneNode(true);
+    firstClone.classList.add('clone');
+    lastClone.classList.add('clone');
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone,slides[0]);
+  }
+
+  const allSlides=()=>track.querySelectorAll('.carousel-slide');
+  const startIdx=total>1?1:0; // empezar en 1 porque hay un clone al inicio
+  carousels[id]={current:startIdx,total,realTotal:total};
+  track.style.transform='translateX(-'+startIdx*100+'%)';
+  track.style.transition='transform .4s cubic-bezier(.4,0,.2,1)';
+
+  const card=track.closest('.carousel-card');
   const dots=document.getElementById(id+'-dots');
   if(dots)dots.style.display=showControls?'flex':'none';
   if(card)card.querySelectorAll('.carousel-btn').forEach(b=>b.style.display=showControls?'flex':'none');
+
+  // Al terminar la transición, saltar sin animación si estamos en clone
+  track.addEventListener('transitionend',()=>{
+    const c=carousels[id];
+    if(c.current>=c.realTotal+1){
+      track.style.transition='none';
+      c.current=1;
+      track.style.transform='translateX(-'+c.current*100+'%)';
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{track.style.transition='transform .4s cubic-bezier(.4,0,.2,1)';}));
+    }
+    if(c.current<=0){
+      track.style.transition='none';
+      c.current=c.realTotal;
+      track.style.transform='translateX(-'+c.current*100+'%)';
+      requestAnimationFrame(()=>requestAnimationFrame(()=>{track.style.transition='transform .4s cubic-bezier(.4,0,.2,1)';}));
+    }
+    // Actualizar dots con índice real
+    const dotIdx=(c.current-1+c.realTotal)%c.realTotal;
+    const dotsEl=document.getElementById(id+'-dots');
+    if(dotsEl)dotsEl.querySelectorAll('.cdot').forEach((d,i)=>d.classList.toggle('active',i===dotIdx));
+  });
+
   let startX=0;
   track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX;},{passive:true});
   track.addEventListener('touchend',e=>{const diff=startX-e.changedTouches[0].clientX;if(Math.abs(diff)>40&&total>1)move(id,diff>0?1:-1);},{passive:true});
 }
 document.addEventListener('DOMContentLoaded',()=>['c0','c1','c2','c3'].forEach(initCarousel));
-setInterval(()=>move('c0',1),3500);
-function goTo(id,idx){const c=carousels[id];c.current=idx;document.getElementById(id+'-track').style.transform='translateX(-'+idx*100+'%)';document.querySelectorAll('#'+id+'-dots .cdot').forEach((d,i)=>d.classList.toggle('active',i===idx));}
-function move(id,dir){const c=carousels[id];if(!c)return;goTo(id,(c.current+dir+c.total)%c.total);}
+// Autoplay global sincronizado
+const AUTOPLAY_DELAY = 3500;
+let globalTick = null;
+let pausedIds = new Set();
+
+function startGlobalAutoplay() {
+  if(globalTick) clearInterval(globalTick);
+  globalTick = setInterval(() => {
+    ['c0','c1','c2','c3'].forEach(id => {
+      if(!pausedIds.has(id)) {
+        const c = carousels[id];
+        if(c && c.realTotal > 1) move(id, 1);
+      }
+    });
+  }, AUTOPLAY_DELAY);
+}
+
+function pauseCarousel(id) {
+  pausedIds.add(id);
+}
+
+function resumeCarousel(id) {
+  pausedIds.delete(id);
+  // Si todos están despaused, no hace falta reiniciar el intervalo global
+}
+
+function initAutoplay(id) {
+  const track = document.getElementById(id+'-track');
+  if(!track) return;
+  const card = track.closest('.carousel-card') || track.closest('.ecard');
+  if(!card) return;
+  card.addEventListener('mouseenter', () => pauseCarousel(id));
+  card.addEventListener('mouseleave', () => resumeCarousel(id));
+  card.addEventListener('touchstart', () => pauseCarousel(id), {passive:true});
+  card.addEventListener('touchend', () => setTimeout(() => resumeCarousel(id), 1500), {passive:true});
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  ['c0','c1','c2','c3'].forEach(id => {
+    const c = carousels[id];
+    if(c && c.realTotal > 1) initAutoplay(id);
+  });
+  startGlobalAutoplay();
+});
+
+function goTo(id,idx){
+  const c=carousels[id];if(!c)return;
+  c.current=idx;
+  const track=document.getElementById(id+'-track');
+  if(track)track.style.transform='translateX(-'+idx*100+'%)';
+  const dotIdx=(idx-1+c.realTotal)%c.realTotal;
+  document.querySelectorAll('#'+id+'-dots .cdot').forEach((d,i)=>d.classList.toggle('active',i===dotIdx));
+}
+function move(id,dir){
+  const c=carousels[id];if(!c)return;
+  goTo(id,c.current+dir);
+}
 
 // FORM
 const form=document.getElementById('contact-form');
@@ -840,7 +1006,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelec
 </script>
 
 <!-- ADMIN BTN -->
-<button id="admin-btn" onclick="openAdmin()" title="Panel de administración">⚙️</button>
+
 
 <!-- ADMIN PANEL -->
 <div id="admin-panel" onclick="closeAdminOutside(event)">
@@ -968,7 +1134,7 @@ function loadAdminValues(){
 }
 
 // ── SAVE TEXTOS ──
-function apSaveTextos(){
+window.apSaveTextosDOM = function apSaveTextosDOM(){
   // hero sub
   const hs = document.querySelector('.hero-sub');
   if(hs) hs.textContent = document.getElementById('ap-hero-sub').value;
@@ -992,6 +1158,7 @@ function apSaveTextos(){
   });
   flashSaved('ap-saved-textos');
 }
+function apSaveTextos(){ window.apSaveTextosFirebase ? window.apSaveTextosFirebase() : window.apSaveTextosDOM(); }
 
 // ── CARRUSEL ADMIN ──
 const carruselDefs = [
@@ -1061,7 +1228,8 @@ function addSlides(carId, input){
   renderCarruselList();
 }
 
-function apSaveCarruseles(){
+function apSaveCarruseles(){ if(window.apSaveCarruselesFirebase){ window.apSaveCarruselesFirebase(); return; } apSaveCarruselesLocal(); }
+function apSaveCarruselesLocal(){
   carruselDefs.forEach(def => {
     const slides = slidesState[def.id] || [];
     const track = document.getElementById(def.id+'-track');
@@ -1110,5 +1278,200 @@ function flashSaved(id){
   setTimeout(()=>{ el.style.opacity='0'; }, 2200);
 }
 </script>
+
+<script>
+// Animación escalonada proj-cards
+const projCards = document.querySelectorAll('.proj-card');
+const projObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      const cards = e.target.closest('.proj-grid-top, .proj-grid-bot')?.querySelectorAll('.proj-card') || [e.target];
+      cards.forEach((c,i) => setTimeout(() => c.classList.add('visible'), i * 100));
+      projObs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.15});
+projCards.forEach(c => projObs.observe(c));
+</script>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+import { getFirestore, doc, getDoc, setDoc } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDiXAUAdJRlDuHMojTlRp6aNSUjkPxLqII",
+  authDomain: "kevin-portfolio-ebf25.firebaseapp.com",
+  projectId: "kevin-portfolio-ebf25",
+  storageBucket: "kevin-portfolio-ebf25.firebasestorage.app",
+  messagingSenderId: "155615908638",
+  appId: "1:155615908638:web:2c6c0a1112ea5a6346af0f"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window._db = db;
+window._doc = doc;
+window._getDoc = getDoc;
+window._setDoc = setDoc;
+
+// ── CARGAR DATOS AL INICIAR ──
+async function loadPortfolioData() {
+  try {
+    const snap = await getDoc(doc(db, 'portfolio', 'contenido'));
+    if (!snap.exists()) return;
+    const data = snap.data();
+
+    // Textos
+    if (data.heroSub) { const el = document.querySelector('.hero-sub'); if(el) el.textContent = data.heroSub; }
+    if (data.aboutText) { const el = document.querySelector('#about .about-text p'); if(el) el.innerHTML = data.aboutText; }
+    if (data.ev0Tag) { const el = document.querySelector('.hero-ev-content .ev-tag'); if(el) el.textContent = data.ev0Tag; }
+    if (data.ev0Title) { const el = document.querySelector('.hero-ev-content .ev-title'); if(el) el.textContent = data.ev0Title; }
+    if (data.ev0Desc) { const el = document.querySelector('.hero-ev-content .ev-desc'); if(el) el.textContent = data.ev0Desc; }
+
+    const evRows = [
+      {id:'c1', titleKey:'ev1Title', descKey:'ev1Desc'},
+      {id:'c2', titleKey:'ev2Title', descKey:'ev2Desc'},
+      {id:'c3', titleKey:'ev3Title', descKey:'ev3Desc'},
+    ];
+    evRows.forEach(({id, titleKey, descKey}) => {
+      const card = document.getElementById(id+'-track')?.closest('.ecard');
+      if (!card) return;
+      if (data[titleKey]) { const el = card.querySelector('.ev-title'); if(el) el.textContent = data[titleKey]; }
+      if (data[descKey]) { const el = card.querySelector('.ev-desc'); if(el) el.textContent = data[descKey]; }
+    });
+
+    // Carruseles — fotos guardadas en Firebase Storage
+    const carDefs = [
+      {id:'c0', height:'420px'},
+      {id:'c1', height:'200px'},
+      {id:'c2', height:'200px'},
+      {id:'c3', height:'200px'},
+    ];
+    carDefs.forEach(def => {
+      const urls = data['slides_'+def.id];
+      if (!urls || !urls.length) return;
+      const track = document.getElementById(def.id+'-track');
+      const dotsEl = document.getElementById(def.id+'-dots');
+      if (!track) return;
+      track.innerHTML = '';
+      if (dotsEl) dotsEl.innerHTML = '';
+      urls.forEach((url, i) => {
+        const div = document.createElement('div');
+        div.className = 'carousel-slide';
+        const img = document.createElement('img');
+        img.src = url;
+        img.style.cssText = 'height:'+def.height+';margin-bottom:0;object-fit:cover;width:100%;border-radius:3px';
+        div.appendChild(img);
+        track.appendChild(div);
+        if (dotsEl) {
+          const btn = document.createElement('button');
+          btn.className = 'cdot' + (i===0?' active':'');
+          btn.onclick = () => window.goTo(def.id, i);
+          dotsEl.appendChild(btn);
+        }
+      });
+      track.style.transform = 'translateX(0)';
+      window.carousels[def.id] = {current:0, total:urls.length};
+      const card = track.closest('.carousel-card');
+      const show = urls.length > 1;
+      if (dotsEl) dotsEl.style.display = show ? 'flex' : 'none';
+      if (card) card.querySelectorAll('.carousel-btn').forEach(b => b.style.display = show ? 'flex' : 'none');
+    });
+
+  } catch(e) { console.log('Sin datos previos:', e.message); }
+}
+
+// ── GUARDAR TEXTOS ──
+window.apSaveTextosFirebase = async function() {
+  const data = {
+    heroSub: document.getElementById('ap-hero-sub')?.value || '',
+    aboutText: document.getElementById('ap-about-text')?.value || '',
+    ev0Tag: document.getElementById('ap-ev0-tag')?.value || '',
+    ev0Title: document.getElementById('ap-ev0-title')?.value || '',
+    ev0Desc: document.getElementById('ap-ev0-desc')?.value || '',
+    ev1Title: document.getElementById('ap-ev1-title')?.value || '',
+    ev1Desc: document.getElementById('ap-ev1-desc')?.value || '',
+    ev2Title: document.getElementById('ap-ev2-title')?.value || '',
+    ev2Desc: document.getElementById('ap-ev2-desc')?.value || '',
+    ev3Title: document.getElementById('ap-ev3-title')?.value || '',
+    ev3Desc: document.getElementById('ap-ev3-desc')?.value || '',
+  };
+  try {
+    await setDoc(doc(db, 'portfolio', 'contenido'), data, {merge: true});
+    // Aplicar al DOM
+    window.apSaveTextosDOM();
+    window.flashSaved('ap-saved-textos');
+  } catch(e) { alert('Error al guardar: ' + e.message); }
+};
+
+// ── GUARDAR CARRUSELES ──
+window.apSaveCarruselesFirebase = null; // Storage no disponible en plan gratuito
+window.apSaveCarruselesLocal_orig = async function() {
+  const carDefs = [
+    {id:'c0', height:'420px'},
+    {id:'c1', height:'200px'},
+    {id:'c2', height:'200px'},
+    {id:'c3', height:'200px'},
+  ];
+  const btn = document.querySelector('#ap-carruseles .ap-save');
+  if(btn){ btn.textContent = 'Subiendo fotos...'; btn.disabled = true; }
+
+  try {
+    const updates = {};
+    for (const def of carDefs) {
+      const slides = window.slidesState[def.id] || [];
+      const urls = [];
+      for (const slide of slides) {
+        if (slide.file) {
+          // Subir foto nueva a Storage
+          const storageRef = ref(storage, 'carruseles/'+def.id+'/'+Date.now()+'-'+slide.name);
+          await uploadBytes(storageRef, slide.file);
+          const url = await getDownloadURL(storageRef);
+          urls.push(url);
+        } else {
+          urls.push(slide.src);
+        }
+      }
+      updates['slides_'+def.id] = urls;
+
+      // Actualizar DOM
+      const track = document.getElementById(def.id+'-track');
+      const dotsEl = document.getElementById(def.id+'-dots');
+      if (!track) continue;
+      track.innerHTML = '';
+      if (dotsEl) dotsEl.innerHTML = '';
+      urls.forEach((url, i) => {
+        const div = document.createElement('div');
+        div.className = 'carousel-slide';
+        const img = document.createElement('img');
+        img.src = url;
+        img.style.cssText = 'height:'+def.height+';margin-bottom:0;object-fit:cover;width:100%;border-radius:3px';
+        div.appendChild(img);
+        track.appendChild(div);
+        if (dotsEl) {
+          const b = document.createElement('button');
+          b.className = 'cdot'+(i===0?' active':'');
+          b.onclick = () => window.goTo(def.id, i);
+          dotsEl.appendChild(b);
+        }
+      });
+      track.style.transform = 'translateX(0)';
+      window.carousels[def.id] = {current:0, total:urls.length};
+      const card = track.closest('.carousel-card');
+      const show = urls.length > 1;
+      if (dotsEl) dotsEl.style.display = show ? 'flex' : 'none';
+      if (card) card.querySelectorAll('.carousel-btn').forEach(b => b.style.display = show ? 'flex' : 'none');
+    }
+
+    await setDoc(doc(db, 'portfolio', 'contenido'), updates, {merge: true});
+    window.flashSaved('ap-saved-carruseles');
+  } catch(e) { alert('Error: ' + e.message); }
+  finally { if(btn){ btn.textContent = 'Aplicar cambios'; btn.disabled = false; } }
+};
+
+document.addEventListener('DOMContentLoaded', loadPortfolioData);
+</script>
+
 </body>
 </html>
