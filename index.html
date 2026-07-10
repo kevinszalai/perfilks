@@ -19,7 +19,7 @@ html,body{overflow-x:hidden;width:100%;background:#f5f4f0}
 :root{
   --bg:#f5f4f0;--bg2:#edecea;--white:#ffffff;--black:#111111;
   --blue:#00528F;--blue2:#003d6b;--blue-light:#e8f0f8;--teal:#008091;--cyan:#00C4DF;
-  --text:#1a1a1a;--muted:#6b6b6b;--muted2:#9a9a9a;--border:#dddbd7;--border2:#c8c5c0;
+  --text:#1a1a1a;--muted:#585858;--muted2:#9a9a9a;--border:#dddbd7;--border2:#c8c5c0;
 }
 body{color:var(--text);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6}
 
@@ -56,7 +56,7 @@ h1 .stroke{-webkit-text-stroke:2px var(--black);color:transparent}
 .stat-card.featured .stat-num{color:#fff}
 .stat-label{margin-top:.3rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
 .stat-card.featured .stat-label{color:rgba(255,255,255,.6)}
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);flex:1}
 
 .tray{background:var(--white);border-top:1px solid var(--border);padding:.65rem 3rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;max-width:1280px;margin:0 auto;width:100%}
 .tray-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted2);white-space:nowrap}
@@ -297,6 +297,9 @@ h1{animation:fadeUp .6s .2s both}
 @media(max-width:900px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.logros-grid{grid-template-columns:repeat(2,1fr)}}
 
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
 </style>
 </head>
 <body>
@@ -318,7 +321,7 @@ h1{animation:fadeUp .6s .2s both}
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge"><span></span> Disponible para nuevas oportunidades</div>
-    <h1>Marketing<br><span class="accent">&amp; Publicidad</span><br><span class="stroke">LATAM</span></h1>
+    <h1>Marketing<br><span class="accent">de terreno</span><br><span class="stroke">en LATAM</span></h1>
     <p class="hero-sub">Estrategias 360°, fidelización, eventos y campañas de impacto para toda la región.</p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">Hablemos</a>
@@ -332,9 +335,8 @@ h1{animation:fadeUp .6s .2s both}
       </div>
       <div class="stat-grid">
         <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label">Países activos</div></div>
-        <div class="stat-card"><div class="stat-num" style="animation:blink 2.5s ease-in-out infinite">∞</div><div class="stat-label">Ferias intl.</div></div>
-        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Prog. fidelización</div></div>
-        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Herram. digitales</div></div>
+        <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Ferias intl.</div></div>
+        <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Herram. propias</div></div>
       </div>
     </div>
   </div>
@@ -409,6 +411,7 @@ h1{animation:fadeUp .6s .2s both}
         <li>Gestión integral: tendencias, proveedores, venta directa y canales digitales.</li>
         <li>Eventos de fidelización y showrooms exclusivos.</li>
         <li>Supervisión de KPIs y análisis de resultados.</li>
+        <li>Marca propia con seis años de operación sostenida en el mercado.</li>
       </ul>
     </div>
     <div class="titem">
@@ -441,8 +444,8 @@ h1{animation:fadeUp .6s .2s both}
 <section id="logros">
   <div class="logros-grid">
     <div class="logro-card">
-      <div class="logro-num">45</div>
-      <div class="logro-label">Años de UA<br>acompañados</div>
+      <div class="logro-num">45°</div>
+      <div class="logro-label">Aniversario de UA<br>acompañado en FIT 2025</div>
     </div>
     <div class="logro-card">
       <div class="logro-num">10+</div>
@@ -470,16 +473,16 @@ h1{animation:fadeUp .6s .2s both}
     <div class="ecard hero-ev carousel-card split">
       <div class="hero-ev-media">
         <div class="carousel-wrapper"><div class="carousel-track" id="c0-track">
-          <div class="carousel-slide"><img src="agenda-1.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-2.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-9.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-3.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-4.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-10.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-5.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-6.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-7.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
-          <div class="carousel-slide"><img src="agenda-8.jpg" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-1.jpg" alt="Stand institucional en congreso regional de Universal Assistance" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-2.jpg" alt="Activación de marca en feria regional 2025" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-9.jpg" alt="Equipo de Universal Assistance en jornada de RCP con partners estratégicos" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-3.jpg" alt="Stand de Universal Assistance en Foro AAPAS" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-4.jpg" alt="Workshop y activación de marca en agenda regional 2025" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-10.jpg" alt="Jornada de RCP de Universal Assistance con partners estratégicos" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-5.jpg" alt="Espacio VIP de Universal Assistance en el Congreso FAEVYT, Paraná" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-6.jpg" alt="Ambulancia y equipo médico propio en el Congreso FAEVYT" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-7.jpg" alt="Stand institucional de Universal Assistance en congreso regional" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
+          <div class="carousel-slide"><img src="agenda-8.jpg" alt="Activación de marca en agenda regional 2025" loading="lazy" style="height:420px;margin-bottom:0;object-fit:cover;width:100%;border-radius:8px"></div>
         </div></div>
         <div class="carousel-dots" id="c0-dots">
           <button class="cdot active" onclick="goTo('c0',0)"></button>
@@ -493,8 +496,8 @@ h1{animation:fadeUp .6s .2s both}
           <button class="cdot" onclick="goTo('c0',8)"></button>
           <button class="cdot" onclick="goTo('c0',9)"></button>
         </div>
-        <button class="carousel-btn prev" onclick="move('c0',-1)" style="top:210px">‹</button>
-        <button class="carousel-btn next" onclick="move('c0',1)" style="top:210px">›</button>
+        <button class="carousel-btn prev" aria-label="Foto anterior" onclick="move('c0',-1)" style="top:210px">‹</button>
+        <button class="carousel-btn next" aria-label="Foto siguiente" onclick="move('c0',1)" style="top:210px">›</button>
       </div>
       <div class="hero-ev-content">
         <div class="ev-tag">Agenda Regional · 2025</div>
@@ -514,17 +517,17 @@ h1{animation:fadeUp .6s .2s both}
 
     <div class="ecard carousel-card">
       <div class="carousel-wrapper"><div class="carousel-track" id="c1-track">
-        <div class="carousel-slide"><img src="fit-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="fit-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="fit-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-1.jpg" alt="Stand de Universal Assistance en FIT 2025" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-2.jpg" alt="Stand renovado de Universal Assistance en la Feria Internacional de Turismo" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="fit-3.jpg" alt="Edición especial por los 45 años de Universal Assistance en FIT 2025" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
       </div></div>
       <div class="carousel-dots" id="c1-dots">
         <button class="cdot active" onclick="goTo('c1',0)"></button>
         <button class="cdot" onclick="goTo('c1',1)"></button>
         <button class="cdot" onclick="goTo('c1',2)"></button>
       </div>
-      <button class="carousel-btn prev" onclick="move('c1',-1)">‹</button>
-      <button class="carousel-btn next" onclick="move('c1',1)">›</button>
+      <button class="carousel-btn prev" aria-label="Foto anterior" onclick="move('c1',-1)">‹</button>
+      <button class="carousel-btn next" aria-label="Foto siguiente" onclick="move('c1',1)">›</button>
       <div class="ev-tag">Feria Internacional · Turismo</div>
       <div class="ev-title">FIT 2025 — 45 años de la marca</div>
       <div class="ev-desc">Stand renovado en la feria de turismo más importante de la región. Edición especial por los 45 años de Universal Assistance.</div>
@@ -532,11 +535,11 @@ h1{animation:fadeUp .6s .2s both}
 
     <div class="ecard carousel-card">
       <div class="carousel-wrapper"><div class="carousel-track" id="c2-track">
-        <div class="carousel-slide"><img src="campana-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="campana-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="campana-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="campana-4.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="campana-5.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-1.jpg" alt="Rodaje de la campaña regional Te cuesta $0" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-2.jpg" alt="Set de filmación de la campaña Te cuesta $0" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-3.jpg" alt="Producción audiovisual de la campaña Te cuesta $0" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-4.jpg" alt="Activación interna de la campaña Te cuesta $0" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="campana-5.jpg" alt="Equipo en la activación de la campaña Te cuesta $0" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
       </div></div>
       <div class="carousel-dots" id="c2-dots">
         <button class="cdot active" onclick="goTo('c2',0)"></button>
@@ -545,8 +548,8 @@ h1{animation:fadeUp .6s .2s both}
         <button class="cdot" onclick="goTo('c2',3)"></button>
         <button class="cdot" onclick="goTo('c2',4)"></button>
       </div>
-      <button class="carousel-btn prev" onclick="move('c2',-1)">‹</button>
-      <button class="carousel-btn next" onclick="move('c2',1)">›</button>
+      <button class="carousel-btn prev" aria-label="Foto anterior" onclick="move('c2',-1)">‹</button>
+      <button class="carousel-btn next" aria-label="Foto siguiente" onclick="move('c2',1)">›</button>
       <div class="ev-tag">Campaña Regional</div>
       <div class="ev-title">Campaña "Te cuesta $0"</div>
       <div class="ev-desc">Campaña regional con rodaje propio y activación interna. Del set de filmación a toda la región.</div>
@@ -554,10 +557,10 @@ h1{animation:fadeUp .6s .2s both}
 
     <div class="ecard carousel-card">
       <div class="carousel-wrapper"><div class="carousel-track" id="c3-track">
-        <div class="carousel-slide"><img src="chile-rugby-1.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="rugby-2.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="rugby-3.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
-        <div class="carousel-slide"><img src="rugby-4.jpg" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="chile-rugby-1.jpg" alt="Sponsorship de Universal Assistance con Chile Rugby - Los Cóndores" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-2.jpg" alt="Logo de Universal Assistance en camiseta de equipo de rugby regional" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-3.jpg" alt="Sponsorship de Universal Assistance en equipo de rugby de la región" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
+        <div class="carousel-slide"><img src="rugby-4.jpg" alt="Chile Rugby - Los Cóndores con el logo de Universal Assistance" loading="lazy" style="height:200px;border-radius:3px;margin-bottom:0;object-fit:cover;width:100%"></div>
       </div></div>
       <div class="carousel-dots" id="c3-dots">
         <button class="cdot active" onclick="goTo('c3',0)"></button>
@@ -565,8 +568,8 @@ h1{animation:fadeUp .6s .2s both}
         <button class="cdot" onclick="goTo('c3',2)"></button>
         <button class="cdot" onclick="goTo('c3',3)"></button>
       </div>
-      <button class="carousel-btn prev" onclick="move('c3',-1)">‹</button>
-      <button class="carousel-btn next" onclick="move('c3',1)">›</button>
+      <button class="carousel-btn prev" aria-label="Foto anterior" onclick="move('c3',-1)">‹</button>
+      <button class="carousel-btn next" aria-label="Foto siguiente" onclick="move('c3',1)">›</button>
       <div class="ev-tag">Sponsorship · Rugby · LATAM</div>
       <div class="ev-title">Chile Rugby &amp; equipos de la región</div>
       <div class="ev-desc">Sponsor oficial de Chile Rugby — Los Cóndores en el Mundial Francia 2023 — y de otros equipos de rugby de la región. El logo de UA en la camiseta.</div>
@@ -636,6 +639,7 @@ h1{animation:fadeUp .6s .2s both}
     </div>
     <div>
       <form class="contact-form" action="https://formspree.io/f/mkoevpkv" method="POST" id="contact-form">
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="form-field"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre" required></div>
           <div class="form-field"><label>Email</label><input type="email" name="email" placeholder="tu@email.com" required></div>
@@ -652,12 +656,15 @@ h1{animation:fadeUp .6s .2s both}
 </div>
 
 <footer>
-  <span class="footer-copy">© 2026 Kevin Szalai · Buenos Aires, Argentina</span>
+  <span class="footer-copy">© <span id="footer-year">2026</span> Kevin Szalai · Buenos Aires, Argentina</span>
   <span class="footer-name">Marketing &amp; Publicidad LATAM</span>
   <button id="admin-btn" onclick="openAdmin()">Admin</button>
 </footer>
 
 <script>
+// FOOTER YEAR
+const fy=document.getElementById('footer-year'); if(fy) fy.textContent=new Date().getFullYear();
+
 // REVEAL
 const reveals=document.querySelectorAll('.reveal');
 const revealObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target);}});},{threshold:.1});
@@ -665,7 +672,7 @@ reveals.forEach(el=>revealObs.observe(el));
 
 // COUNTERS
 const statNums=document.querySelectorAll('.stat-num');
-const targets={'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'3':{val:3,suffix:''},'∞':{val:null}};
+const targets={'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'10+':{val:10,suffix:'+'},'5':{val:5,suffix:''}};
 function animCount(el,target,suffix,dur){let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*target)+suffix;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);}
 function animInf(el,dur){el.style.opacity='0';el.style.transform='scale(0.4)';let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.style.opacity=e;el.style.transform='scale('+(0.4+e*0.6)+')';if(p<1)requestAnimationFrame(step);else{el.style.opacity='1';el.style.transform='scale(1)'}};requestAnimationFrame(step);}
 const numObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;const t=targets[el.textContent.trim()];if(t){if(t.val===null)animInf(el,900);else animCount(el,t.val,t.suffix,900);numObs.unobserve(el);}});},{threshold:.5});
@@ -770,7 +777,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const c = carousels[id];
     if(c && c.realTotal > 1) initAutoplay(id);
   });
-  startGlobalAutoplay();
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion) startGlobalAutoplay();
 });
 
 function goTo(id,idx){
@@ -798,7 +806,7 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
         <div class="modal-tag">Ventas · Digital · Herramienta interna</div>
         <div class="modal-title">Tarjetas Virtuales con QR</div>
       </div>
-      <button class="modal-close" onclick="closeModal('tarjetas')">✕</button>
+      <button class="modal-close" aria-label="Cerrar" onclick="closeModal('tarjetas')">✕</button>
     </div>
     <div class="modal-desc">
       Diseñé y desarrollé esta herramienta para que cada comercial arme su propia tarjeta de presentación digital — con foto, datos de contacto y un código QR que carga el contacto directo al celular de quien la escanea. Pensada para eventos y ferias, donde compartir datos rápido y sin depender de tarjetas de papel hace la diferencia. Exporta en alta resolución, lista para compartir por WhatsApp o LinkedIn.
@@ -844,7 +852,7 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
         <div class="modal-tag">Branding · Multi-país · Herramienta interna</div>
         <div class="modal-title">Compositor de Cobranding</div>
       </div>
-      <button class="modal-close" onclick="closeModal('cobranding')">✕</button>
+      <button class="modal-close" aria-label="Cerrar" onclick="closeModal('cobranding')">✕</button>
     </div>
     <div class="modal-desc">
       Desarrollé esta plataforma para resolver un cuello de botella real: cada vez que se cerraba una alianza con un partner local, armar la pieza con los dos logos bien puestos dependía de pedirlo a diseño. Con esta herramienta, cada país genera su propia pieza con acceso restringido por mercado, detección automática cuando hay dos logos, y fechas de vencimiento configuradas para que ninguna pieza vieja siga circulando.
@@ -888,7 +896,7 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
         <div class="modal-tag">Comercial · UX · Herramienta interna</div>
         <div class="modal-title">Generador de Perfiles de Cobertura</div>
       </div>
-      <button class="modal-close" onclick="closeModal('perfiles')">✕</button>
+      <button class="modal-close" aria-label="Cerrar" onclick="closeModal('perfiles')">✕</button>
     </div>
     <div class="modal-desc">
       Herramienta web interna que eliminó el proceso manual de armado de perfiles de cobertura. El equipo comercial genera PDFs con marca institucional en minutos, con login corporativo por OTP. El contenido de cobertura lo carga y mantiene marketing/producto — el comercial solo completa datos y descarga, sin depender del equipo de diseño. Todo en un único archivo HTML.
@@ -933,7 +941,7 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
         <div class="modal-tag">Comercial · Marketing · Herramienta interna</div>
         <div class="modal-title">Generador de Piezas para Promociones</div>
       </div>
-      <button class="modal-close" onclick="closeModal('promos')">✕</button>
+      <button class="modal-close" aria-label="Cerrar" onclick="closeModal('promos')">✕</button>
     </div>
     <div class="modal-desc">
       Construí este editor para que el equipo comercial cargue el descuento y la financiación de su campaña puntual sobre una plantilla ya aprobada, sin tocar el arte base. Cada pieza pasa por un flujo de aprobación antes de salir a la calle, así ninguna promoción incorrecta llega a circular. Corre sobre plantillas SVG con capas bloqueables y un catálogo configurable.
@@ -971,7 +979,7 @@ if(form){form.addEventListener('submit',async e=>{e.preventDefault();const btn=f
         <div class="modal-tag">Eventos · Digital · Herramienta interna</div>
         <div class="modal-title">Editor de Invitaciones</div>
       </div>
-      <button class="modal-close" onclick="closeModal('invitaciones')">✕</button>
+      <button class="modal-close" aria-label="Cerrar" onclick="closeModal('invitaciones')">✕</button>
     </div>
     <div class="modal-desc">
       Diseñé un editor sobre Canvas para armar la invitación a un evento en minutos, en formato Story para redes o Email, con QR de inscripción incluido. La paleta y las posiciones editables quedan acotadas desde un panel de administración, para que la pieza final nunca se salga de marca.
@@ -1019,7 +1027,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelec
 <div class="ap-box">
   <div class="ap-head">
     <h3>Panel de administración</h3>
-    <button class="ap-close" onclick="closeAdmin()">✕</button>
+    <button class="ap-close" aria-label="Cerrar panel de administración" onclick="closeAdmin()">✕</button>
   </div>
   <div class="ap-tabs">
     <button class="ap-tab active" onclick="apTab('textos')">Textos</button>
@@ -1203,7 +1211,7 @@ function renderCarruselList(){
       <div class="ap-slides-list" id="ap-slides-${def.id}">
         ${slides.map((s,i) => `
           <div class="ap-slide-item" id="ap-slide-${def.id}-${i}">
-            <img class="ap-slide-thumb" src="${s.src}" onerror="this.style.background='#ddd'">
+            <img class="ap-slide-thumb" src="${s.src}" alt="" onerror="this.style.background='#ddd'">
             <span class="ap-slide-name">${s.name}</span>
             <button class="ap-slide-del" onclick="removeSlide('${def.id}',${i})" title="Eliminar">✕</button>
           </div>
