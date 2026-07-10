@@ -56,7 +56,7 @@ h1 .stroke{-webkit-text-stroke:2px var(--black);color:transparent}
 .stat-card.featured .stat-num{color:#fff}
 .stat-label{margin-top:.3rem;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
 .stat-card.featured .stat-label{color:rgba(255,255,255,.6)}
-.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);flex:1}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);flex:1}
 
 .tray{background:var(--white);border-top:1px solid var(--border);padding:.65rem 3rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;max-width:1280px;margin:0 auto;width:100%}
 .tray-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted2);white-space:nowrap}
@@ -321,7 +321,7 @@ h1{animation:fadeUp .6s .2s both}
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge"><span></span> Disponible para nuevas oportunidades</div>
-    <h1>Marketing<br><span class="accent">de terreno</span><br><span class="stroke">en LATAM</span></h1>
+    <h1>Marketing<br><span class="accent">con impacto</span><br><span class="stroke">real</span></h1>
     <p class="hero-sub">Estrategias 360°, fidelización, eventos y campañas de impacto para toda la región.</p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">Hablemos</a>
@@ -335,8 +335,9 @@ h1{animation:fadeUp .6s .2s both}
       </div>
       <div class="stat-grid">
         <div class="stat-card"><div class="stat-num">5+</div><div class="stat-label">Países activos</div></div>
-        <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">Ferias intl.</div></div>
-        <div class="stat-card"><div class="stat-num">5</div><div class="stat-label">Herram. propias</div></div>
+        <div class="stat-card"><div class="stat-num" style="animation:blink 2.5s ease-in-out infinite">∞</div><div class="stat-label">Ferias intl.</div></div>
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Prog. fidelización</div></div>
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Herram. digitales</div></div>
       </div>
     </div>
   </div>
@@ -448,15 +449,15 @@ h1{animation:fadeUp .6s .2s both}
       <div class="logro-label">Aniversario de UA<br>acompañado en FIT 2025</div>
     </div>
     <div class="logro-card">
-      <div class="logro-num">10+</div>
-      <div class="logro-label">Ferias internacionales<br>coordinadas</div>
+      <div class="logro-num">50+</div>
+      <div class="logro-label">Ferias nacionales e<br>internacionales coordinadas</div>
     </div>
     <div class="logro-card">
       <div class="logro-num">3</div>
       <div class="logro-label">Programas de<br>fidelización liderados</div>
     </div>
     <div class="logro-card">
-      <div class="logro-num">5</div>
+      <div class="logro-num">10+</div>
       <div class="logro-label">Mercados activos<br>en LATAM</div>
     </div>
   </div>
@@ -630,7 +631,7 @@ h1{animation:fadeUp .6s .2s both}
   <h2 class="reveal reveal-delay-1">Hablemos</h2>
   <div class="contact-grid reveal reveal-delay-2">
     <div>
-      <h3 class="contact-hl">¿Buscás un perfil <span class="accent">regional</span> con visión integral?</h3>
+      <h3 class="contact-hl">¿Buscás un perfil de <span class="accent">marketing</span> con visión integral?</h3>
       <p class="contact-sub">Abierto a oportunidades en marketing y publicidad — cualquier mercado.</p>
       <a href="https://ar.linkedin.com/in/kevinszalai" target="_blank" rel="noopener" class="li-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -672,7 +673,7 @@ reveals.forEach(el=>revealObs.observe(el));
 
 // COUNTERS
 const statNums=document.querySelectorAll('.stat-num');
-const targets={'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'10+':{val:10,suffix:'+'},'5':{val:5,suffix:''}};
+const targets={'360°':{val:360,suffix:'°'},'5+':{val:5,suffix:'+'},'3':{val:3,suffix:''},'∞':{val:null}};
 function animCount(el,target,suffix,dur){let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*target)+suffix;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);}
 function animInf(el,dur){el.style.opacity='0';el.style.transform='scale(0.4)';let start=null;const step=ts=>{if(!start)start=ts;const p=Math.min((ts-start)/dur,1);const e=1-Math.pow(1-p,3);el.style.opacity=e;el.style.transform='scale('+(0.4+e*0.6)+')';if(p<1)requestAnimationFrame(step);else{el.style.opacity='1';el.style.transform='scale(1)'}};requestAnimationFrame(step);}
 const numObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;const t=targets[el.textContent.trim()];if(t){if(t.val===null)animInf(el,900);else animCount(el,t.val,t.suffix,900);numObs.unobserve(el);}});},{threshold:.5});
